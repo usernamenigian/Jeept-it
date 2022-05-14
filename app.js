@@ -15,7 +15,6 @@ export default function App() {
 
       </View>
 
-      <StatusBar style="auto" />
     </View>
   );
 }
@@ -23,8 +22,23 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#0FF',
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  logoContainer: {
+
+  },
+  titles: {
+
+  },
+  title: {
+    
+  },
+  subtitle1: {
+
+  },
+  subtitle2: {
+
   },
 });
