@@ -8,9 +8,9 @@ export default function App() {
       <View style={styles.logoContainer}>
 
         <View style={styles.titles}>
-          <text style={styles.title}>JEEP IT</text>
-          <text style={styles.subtitle1}>MAP FOR JEEPS</text>
-          <text style={styles.subtitle2}>Jeep App for Commuters</text>
+          <Text style={styles.title}>JEEP IT</Text>
+          <Text style={styles.subtitle1}>MAP FOR JEEPS</Text>
+          <Text style={styles.subtitle2}>Jeep App for Commuters</Text>
         </View>
 
       </View>
