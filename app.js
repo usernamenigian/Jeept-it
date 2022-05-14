@@ -4,7 +4,17 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+
+      <View style={styles.logoContainer}>
+
+        <View style={styles.titles}>
+          <text style={styles.title}>JEEP IT</text>
+          <text style={styles.subtitle1}>MAP FOR JEEPS</text>
+          <text style={styles.subtitle2}>Jeep App for Commuters</text>
+        </View>
+
+      </View>
+
       <StatusBar style="auto" />
     </View>
   );
