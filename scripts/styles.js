@@ -4,6 +4,7 @@ const styles = StyleSheet.create({
     logoContainer: {
         width: "100%",
         height: "100%",
+        alignItems: "center"
       },
       titles: {
         marginTop: "50%",
@@ -31,6 +32,11 @@ const styles = StyleSheet.create({
         width: "25%",
         height: "25%",
         resizeMode: "cover",
+      },
+      buttonContainer: {
+        position: "absolute",
+        bottom: 100,
+        width: '70%'
       }
 })
 

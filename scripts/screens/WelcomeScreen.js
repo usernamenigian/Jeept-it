@@ -1,10 +1,12 @@
-import React from 'react'
+import React, {Component} from 'react';
 import {Text, View, Image, ImageBackground} from 'react-native';
 import styles from '../styles';
+import Button from '../button/Button';
 
-const WelcomeScreen = () => {
-    return (
-        <View style={styles.logoContainer}>
+class WelcomeScreen extends Component {
+    render() {
+        return (
+            <View style={styles.logoContainer}>
 
             <ImageBackground 
             source={require('../../assets/testbackground.jpg')}
@@ -21,8 +23,20 @@ const WelcomeScreen = () => {
             <Text style={styles.subtitle2}>Jeep App for Commuters</Text>
 
             </View>
+            <View style={styles.buttonContainer}>
+            <Button
+             backgroundColor={"#FFF"}
+             textColor={"#000"}
+             content={"Get Started"}
+             onPress={() => {
+                 console.warn('next screen')
+            }}
+            />
+            </View>
+            
         </View>
-    );
-};
+        )
+    }
+}
 
 export default WelcomeScreen
