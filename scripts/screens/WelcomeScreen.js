@@ -8,10 +8,6 @@ class WelcomeScreen extends Component {
         return (
             <View style={styles.logoContainer}>
 
-            <ImageBackground 
-            source={require('../../assets/testbackground.jpg')}
-            style={styles.backgroundImage}/>
-
             <View style={styles.titles}>
 
             <Image 
