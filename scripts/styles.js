@@ -22,12 +22,6 @@ const styles = StyleSheet.create({
         fontSize: 18,
         fontWeight: "300"
       },
-      backgroundImage: {
-        width: "100%",
-        height: "100%",
-        resizeMode: "cover",
-        position: "absolute",
-      },
       logoImage: {
         width: "25%",
         height: "25%",
