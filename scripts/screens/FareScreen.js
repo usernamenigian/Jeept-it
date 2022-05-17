@@ -15,7 +15,7 @@ class FareList extends Component {
           <Card style={styles.card}>
            <Card.Title title="Jeepney Fare Guide" />
            <Card.Content>
-              <ScrollView>
+              <ScrollView style={styles.ScrollView}>
                 <Table borderStyle={{borderWidth: 2, borderColor: 'orange'}}>
                     <Row data={content.tableHead} style={styles.head} textStyle={styles.text}/>
                     <Rows data={content.tableData} textStyle={styles.text}/>
@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
     marginLeft: 'auto',
     marginRight: 'auto'
   },
+  ScrollView: {height: '90%'},
     head: { height: 50, backgroundColor: 'skyblue'},
     text: { margin: 5, textAlign: 'center', fontWeight: '500'}
 })
