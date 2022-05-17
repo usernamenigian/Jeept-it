@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, View, ImageBackground} from 'react-native';
 import WelcomeScreen from './scripts/screens/WelcomeScreen'
+import FareScreen from './scripts/screens/FareScreen';
 
 export default function App() {
   return (
@@ -11,7 +12,7 @@ export default function App() {
        source={require('./assets/testbackground.jpg')}
        style={styles.backgroundImage}/>
 
-      <WelcomeScreen/>
+      <FareScreen/>
 
       <StatusBar style="auto" />
     </View>
@@ -21,8 +22,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#FFF",
-    alignItems: "center",
     justifyContent: "center",
   },
   backgroundImage: {

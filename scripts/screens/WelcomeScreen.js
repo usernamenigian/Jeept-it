@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import {Text, View, Image, ImageBackground} from 'react-native';
-import styles from '../styles';
+import {Text, View, Image, StyleSheet} from 'react-native';
 import Button from '../button/Button';
 
 class WelcomeScreen extends Component {
@@ -34,5 +33,39 @@ class WelcomeScreen extends Component {
         )
     }
 }
+
+const styles = StyleSheet.create({
+    logoContainer: {
+        width: "100%",
+        height: "100%",
+        alignItems: "center"
+      },
+      titles: {
+        marginTop: "50%",
+        alignItems: "center"
+      },
+      title: {
+        fontSize: 48,
+        fontWeight: "bold",
+      },
+      subtitle1: {
+        fontSize: 18,
+        fontWeight: "500",
+      },
+      subtitle2: {
+        fontSize: 18,
+        fontWeight: "300"
+      },
+      logoImage: {
+        width: "25%",
+        height: "25%",
+        resizeMode: "cover",
+      },
+      buttonContainer: {
+        position: "absolute",
+        bottom: 100,
+        width: '70%'
+      }
+})
 
 export default WelcomeScreen
