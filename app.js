@@ -1,33 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, View, ImageBackground} from 'react-native';
 import WelcomeScreen from './scripts/screens/WelcomeScreen'
 import FareScreen from './scripts/screens/FareScreen';
+import HomeScreen from './scripts/screens/HomeScreen';
+
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { Provider as PaperProvider } from 'react-native-paper';
+
+const Stack = createNativeStackNavigator()
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      
-      <ImageBackground
-       source={require('./assets/testbackground.jpg')}
-       style={styles.backgroundImage}/>
-
-      <FareScreen/>
-
-      <StatusBar style="auto" />
-    </View>
-  );
+    <PaperProvider>
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen name="Welcome" component={WelcomeScreen}/>
+          <Stack.Screen name="Home" component={HomeScreen}/>
+          <Stack.Screen name="Fare List" component={FareScreen}/>
+        </Stack.Navigator>
+    </NavigationContainer>
+    </PaperProvider>
+  )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-  },
-  backgroundImage: {
-    width: "100%",
-    height: "100%",
-    resizeMode: "cover",
-    position: "absolute",
-  }
-});
