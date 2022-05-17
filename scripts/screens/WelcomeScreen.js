@@ -1,41 +1,42 @@
 import React, {Component} from 'react';
 import {Text, View, Image, StyleSheet} from 'react-native';
-import Button from '../button/Button';
+import { Button, Card } from 'react-native-paper';
+import { DefaultTheme } from 'react-native-paper';
 
 class WelcomeScreen extends Component {
+  constructor(props) {
+    super(props)
+  }
     render() {
         return (
-            <View style={styles.logoContainer}>
+          <Card style={styles.card}>          
+          <View style={styles.container}>
 
-            <View style={styles.titles}>
-
-            <Image 
-            source={require('../../assets/favicon.png')}
-            style={styles.logoImage}/>
-
+           <View style={styles.titles}>
             <Text style={styles.title}>JEEP IT</Text>
             <Text style={styles.subtitle1}>MAP FOR JEEPS</Text>
             <Text style={styles.subtitle2}>Jeep App for Commuters</Text>
+           </View>
 
-            </View>
             <View style={styles.buttonContainer}>
-            <Button
-             backgroundColor={"#FFF"}
-             textColor={"#000"}
-             content={"Get Started"}
-             onPress={() => {
-                 console.warn('next screen')
-            }}
-            />
+            <Button mode="contained" onPress={() => this.props.navigation.navigate('Home')}>Get Started</Button>
             </View>
             
-        </View>
+          </View>
+          </Card>
         )
     }
 }
 
 const styles = StyleSheet.create({
-    logoContainer: {
+  card: {
+        width: '100%',
+        backgroundColor: DefaultTheme.colors.background,
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        marginBottom: 10
+        },
+    container: {
         width: "100%",
         height: "100%",
         alignItems: "center"
@@ -56,14 +57,9 @@ const styles = StyleSheet.create({
         fontSize: 18,
         fontWeight: "300"
       },
-      logoImage: {
-        width: "25%",
-        height: "25%",
-        resizeMode: "cover",
-      },
       buttonContainer: {
         position: "absolute",
-        bottom: 100,
+        bottom: 120,
         width: '70%'
       }
 })
