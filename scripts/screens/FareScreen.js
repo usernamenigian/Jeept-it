@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
   card: {
     width: '95%',
     marginTop: '5%',
+    marginBottom: '5%',
     marginLeft: 'auto',
     marginRight: 'auto'
   },
