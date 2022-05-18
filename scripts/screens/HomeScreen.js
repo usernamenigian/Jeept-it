@@ -1,11 +1,10 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Button, Card } from 'react-native-paper';
-import { DefaultTheme } from 'react-native-paper';
 
 function HomeScreen ({ navigation }) {
   return (
-    <View style={styles.view}>
+    <View>
       <Card style={styles.card}>
         <Card.Title title="Jeepney Fare Guide" />
         <Card.Content>
@@ -16,19 +15,19 @@ function HomeScreen ({ navigation }) {
       </Card>
 
       <Card style={styles.card}>
-        <Card.Title title="Next Screen" />
+        <Card.Title title="Jeepney List" />
         <Card.Content>
-          <Button mode="contained" onPress={() => navigation.navigate('')}>
-            Navigate
+          <Button mode="contained" onPress={() => navigation.navigate('Jeep List')}>
+            View
           </Button>
         </Card.Content>
       </Card>
 
       <Card style={styles.card}>
-        <Card.Title title="Next next screen"/>
+        <Card.Title title="Map"/>
         <Card.Content>
-          <Button mode="contained" onPress={() => navigation.navigate('')}>
-            Navigate
+          <Button mode="contained" onPress={() => navigation.navigate('Maps')}>
+            View
           </Button>
         </Card.Content>
       </Card>
@@ -38,13 +37,10 @@ function HomeScreen ({ navigation }) {
 }
 
 const styles = StyleSheet.create({
-  view: {
-    backgroundColor: DefaultTheme.colors.background,
-    paddingTop: 10
-  },
   card: {
     width: '95%',
     marginTop: '5%',
+    marginBottom: '5%',
     marginLeft: 'auto',
     marginRight: 'auto'
   }
