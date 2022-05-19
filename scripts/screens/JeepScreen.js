@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, ScrollView, View, Text } from 'react-native';
+import { StyleSheet, ScrollView } from 'react-native';
 import { Card, Button } from 'react-native-paper';
 
 import jeeps from '../JeepsList';

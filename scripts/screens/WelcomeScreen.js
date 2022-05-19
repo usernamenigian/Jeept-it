@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
-import {Text, View, Image, StyleSheet} from 'react-native';
+import {Text, View} from 'react-native';
 import { Button, Card } from 'react-native-paper';
 import { DefaultTheme } from 'react-native-paper';
+
+import styles from './styles';
 
 class WelcomeScreen extends Component {
   constructor(props) {
@@ -9,7 +11,7 @@ class WelcomeScreen extends Component {
   }
     render() {
         return (
-          <Card style={styles.card}>          
+          <Card style={styles.welcomeCard}>          
           <View style={styles.container}>
 
            <View style={styles.titles}>
@@ -29,7 +31,7 @@ class WelcomeScreen extends Component {
 }
 
 const styles = StyleSheet.create({
-  card: {
+  welcomeCard: {
         width: '100%',
         backgroundColor: DefaultTheme.colors.background,
         marginLeft: 'auto',
