@@ -1,22 +1,33 @@
 import React, { Component } from 'react';
-import { StyleSheet, ScrollView } from 'react-native';
-import { Card } from 'react-native-paper';
+import { StyleSheet, ScrollView, View, Text } from 'react-native';
+import { Card, Button } from 'react-native-paper';
+
+import jeeps from '../JeepsList';
 
 class JeepScreen extends Component {
+  constructor (props) {
+    super(props)
+  }
     render() {
         return (
-            <Card style={styles.card}>
-                <ScrollView style={styles.view}>
-
-
-
-
-
-                </ScrollView>
-            </Card>
+          <ScrollView style={styles.card}>
+            {jeepList}
+          </ScrollView>
         )
     }
+}
 
+const jeepList = jeeps.map((jeep, index) => {
+  return (<Card key={index}>
+          <Card.Title title={jeeps[index].name}/>
+           <Card.Content>
+            <Button mode="contained" onPress={() => getRoutes(index)}>Go</Button>
+           </Card.Content>
+         </Card>)
+})
+
+function getRoutes(index) {
+  alert(jeeps[index].routes)
 }
 
 const styles = StyleSheet.create({
@@ -26,8 +37,7 @@ const styles = StyleSheet.create({
     marginBotttom: '5%',
     marginLeft: 'auto',
     marginRight: 'auto'
-  },
-  view: {height: '90%'}
+  }
 })
 
 export default JeepScreen
