@@ -1,6 +1,8 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View } from 'react-native';
 import { Button, Card } from 'react-native-paper';
+
+import styles from './styles';
 
 function HomeScreen ({ navigation }) {
   return (
@@ -35,15 +37,4 @@ function HomeScreen ({ navigation }) {
     </View>
   )
 }
-
-const styles = StyleSheet.create({
-  card: {
-    width: '95%',
-    marginTop: '5%',
-    marginBottom: '5%',
-    marginLeft: 'auto',
-    marginRight: 'auto'
-  }
-});
-
 export default HomeScreen

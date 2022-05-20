@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import { StyleSheet, ScrollView } from 'react-native';
+import { ScrollView } from 'react-native';
 import { Card } from 'react-native-paper';
 import { Table, Row, Rows } from 'react-native-table-component';
 import fare from '../Fare';
+
+import styles from './styles';
 
 const content = {
     tableHead: ['Distance (km)', 'Regular', 'Discounted'],
@@ -26,18 +28,5 @@ class FareScreen extends Component {
         )
     }
 }
-
-const styles = StyleSheet.create({
-  card: {
-    width: '95%',
-    marginTop: '5%',
-    marginBotttom: '5%',
-    marginLeft: 'auto',
-    marginRight: 'auto'
-  },
-  view: {height: '90%'},
-  head: { height: 50, backgroundColor: 'skyblue'},
-  text: { margin: 5, textAlign: 'center', fontWeight: '500'}
-})
 
 export default FareScreen
