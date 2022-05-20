@@ -6,9 +6,6 @@ import jeeps from '../JeepsList';
 import styles from './styles';
 
 class JeepScreen extends Component {
-  constructor (props) {
-    super(props)
-  }
     render() {
         return (
           <ScrollView style={styles.card}>

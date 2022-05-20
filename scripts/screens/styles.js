@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { DefaultTheme } from 'react-native-paper';
 
 const styles = StyleSheet.create({
     welcomeCard: {
