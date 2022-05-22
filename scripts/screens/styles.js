@@ -46,6 +46,13 @@ const styles = StyleSheet.create({
             margin: 5, 
             textAlign: 'center', 
             fontWeight: '500'
+          },
+          card: {
+            width: '95%',
+            marginTop: '5%',
+            marginBottom: '5%',
+            marginLeft: 'auto',
+            marginRight: 'auto'
           }
 })
 
