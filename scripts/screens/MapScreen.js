@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ScrollView } from 'react-native';
+import { View, Text } from 'react-native';
 import { Card } from 'react-native-paper';
 
 import styles from './styles';
@@ -7,9 +7,21 @@ import styles from './styles';
 class MapScreen extends Component {
     render () {
         return (
-            <Card>
-                
-            </Card>
+            <View>
+                <Card style={styles.card}>
+                <Card.Title title="Map" />
+                  <Card.Content>
+                  <Text>insert the map here</Text>
+                  </Card.Content>
+                </Card>
+
+                <Card style={styles.card}>
+                 <Card.Title title="Calculation" />
+                  <Card.Content>
+                  <Text>insert here</Text>
+                  </Card.Content>
+                </Card>
+            </View>
         )
     }
     

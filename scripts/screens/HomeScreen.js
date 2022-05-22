@@ -10,18 +10,14 @@ function HomeScreen ({ navigation }) {
       <Card style={styles.card}>
         <Card.Title title="Jeepney Fare Guide" />
         <Card.Content>
-          <Button mode="contained" onPress={() => navigation.navigate('Fare List')}>
-            View
-          </Button>
+          <Button mode="contained" onPress={() => navigation.navigate('Fare List')}></Button>
         </Card.Content>
       </Card>
 
       <Card style={styles.card}>
         <Card.Title title="Jeepney List" />
         <Card.Content>
-          <Button mode="contained" onPress={() => navigation.navigate('Jeep List')}>
-            View
-          </Button>
+          <Button mode="contained" onPress={() => navigation.navigate('Jeep List')}>View</Button>
         </Card.Content>
       </Card>
 
