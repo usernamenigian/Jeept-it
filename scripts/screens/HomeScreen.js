@@ -10,7 +10,7 @@ function HomeScreen ({ navigation }) {
       <Card style={styles.card}>
         <Card.Title title="Jeepney Fare Guide" />
         <Card.Content>
-          <Button mode="contained" onPress={() => navigation.navigate('Fare List')}></Button>
+          <Button mode="contained" onPress={() => navigation.navigate('Fare List')}>View</Button>
         </Card.Content>
       </Card>
 
