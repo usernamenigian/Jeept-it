@@ -53,6 +53,18 @@ const styles = StyleSheet.create({
             marginBottom: '5%',
             marginLeft: 'auto',
             marginRight: 'auto'
+          }, 
+          mapContainer: {
+            flex: 1,
+            alignItems: 'center',
+            justifyContent: 'center',
+          },
+          map: {
+            position: 'absolute',
+            top: 50,
+            left: 25,
+            right: 25,
+            bottom: 150,
           }
 })
 

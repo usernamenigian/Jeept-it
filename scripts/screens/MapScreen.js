@@ -1,27 +1,10 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
-import { Card } from 'react-native-paper';
-
-import styles from './styles';
+import Map from '../Map';
 
 class MapScreen extends Component {
     render () {
         return (
-            <View>
-                <Card style={styles.card}>
-                <Card.Title title="Map" />
-                  <Card.Content>
-                  <Text>insert the map here</Text>
-                  </Card.Content>
-                </Card>
-
-                <Card style={styles.card}>
-                 <Card.Title title="Calculation" />
-                  <Card.Content>
-                  <Text>insert here</Text>
-                  </Card.Content>
-                </Card>
-            </View>
+          Map
         )
     }
     
