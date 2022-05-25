@@ -58,14 +58,14 @@ const styles = StyleSheet.create({
             flex: 1,
             alignItems: 'center',
             justifyContent: 'center',
-        },
-        map: {
-          position: 'absolute',
-          top: 50,
-          left: 25,
-          right: 25,
-          bottom: 150,
-        }
+          },
+          map: {
+            position: 'absolute',
+            top: 50,
+            left: 25,
+            right: 25,
+            bottom: 150,
+          }
 })
 
 export default styles
