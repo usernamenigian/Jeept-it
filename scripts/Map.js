@@ -1,9 +1,11 @@
 import React from 'react';
 import MapView, { Marker } from 'react-native-maps';
-import { StyleSheet, View } from 'react-native';
+import { View } from 'react-native';
+
+import styles from './screens/styles'
 
 const Map = 
-  <View style = {styles.container}>
+  <View style = {styles.mapContainer}>
    <MapView style = {styles.map} 
     initialRegion = {{
      latitude: 10.701803,
@@ -94,19 +96,3 @@ const Map =
   </View>
 
 export default Map
-
-const styles = StyleSheet.create({
- container: {
-  flex: 1,
-  backgroundColor: 'white',
-  alignItems: 'center',
-  justifyContent: 'center',
- },
- map: {
-  position: 'absolute',
-  top: 50,
-  left: 25,
-  right: 25,
-  bottom: 150,
- },
-});

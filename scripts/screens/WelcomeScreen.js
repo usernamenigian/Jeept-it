@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {Text, View} from 'react-native';
 import { Button, Card } from 'react-native-paper';
-import { DefaultTheme } from 'react-native-paper';
 
 import styles from './styles';
 

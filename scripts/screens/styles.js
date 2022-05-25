@@ -46,7 +46,26 @@ const styles = StyleSheet.create({
             margin: 5, 
             textAlign: 'center', 
             fontWeight: '500'
-          }
+          },
+          card: {
+            width: '95%',
+            marginTop: '5%',
+            marginBottom: '5%',
+            marginLeft: 'auto',
+            marginRight: 'auto'
+          }, 
+          mapContainer: {
+            flex: 1,
+            alignItems: 'center',
+            justifyContent: 'center',
+        },
+        map: {
+          position: 'absolute',
+          top: 50,
+          left: 25,
+          right: 25,
+          bottom: 150,
+        }
 })
 
 export default styles
