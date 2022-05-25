@@ -15,7 +15,10 @@ const jeepname =
     }}
    >
        <MapView.Marker
-       
+        coordinate = {{latitude: 0,
+        longitude: 0}}
+        pinColor = {"red"}
+        title = {"location name"}
        />
    </MapView>
 </View>
