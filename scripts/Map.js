@@ -92,7 +92,10 @@ const Map =
     pinColor = {"red"}
     title = {"SM Delgado"}
     />
+    
+   
    </MapView> 
   </View>
 
 export default Map
+
