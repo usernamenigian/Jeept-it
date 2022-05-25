@@ -147,3 +147,5 @@ coordinate = {{latitude: 10.695853,
 />
 </MapView>
 </View>
+
+export default ungkaTanza
