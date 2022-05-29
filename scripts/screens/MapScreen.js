@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-import Map from '../Map';
 
 class MapScreen extends Component {
-    render () {
+  constructor(props) {
+    super(props)
+  }
+
+  render () {
         return (
-          Map
+          this.props.route.params.jeepMap
         )
     }
-    
 }
 
 export default MapScreen
