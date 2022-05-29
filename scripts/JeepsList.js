@@ -1,5 +1,8 @@
 import jaroCPU from "./jeeps/jaro-cpu"
 import jaroCPUUngka from "./jeeps/jaro-cpu-ungka"
+import jaroLikoNFA from "./jeeps/jaro-liko-nfa"
+import jaroLikoTagbak from "./jeeps/jaro-liko-tagbak"
+import villa from "./jeeps/villa"
 
 const jeeps = [{
     name: 'Jaro CPU',
@@ -8,14 +11,14 @@ const jeeps = [{
     name: 'Jaro CPU Ungka',
     map: jaroCPUUngka,
 }, {
-    name: 'Jaro CPU',
-    map: jaroCPU,
+    name: 'Jaro Liko NFA',
+    map: jaroLikoNFA,
 }, {
-    name: 'Jaro CPU',
-    map: jaroCPU,
+    name: 'Jaro Liko Tagbak',
+    map: jaroLikoTagbak,
 }, {
-    name: 'Jaro CPU',
-    map: jaroCPU,
+    name: 'Villa',
+    map: villa,
 }, {
     name: 'Jaro CPU',
     map: jaroCPU,
