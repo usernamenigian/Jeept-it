@@ -20,16 +20,7 @@ function HomeScreen ({ navigation }) {
           <Button mode="contained" onPress={() => navigation.navigate('Jeep List')}>View</Button>
         </Card.Content>
       </Card>
-
-      <Card style={styles.card}>
-        <Card.Title title="Map"/>
-        <Card.Content>
-          <Button mode="contained" onPress={() => navigation.navigate('Maps')}>
-            View
-          </Button>
-        </Card.Content>
-      </Card>
-
+      
     </View>
   )
 }
