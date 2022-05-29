@@ -1,10 +1,30 @@
+import jaroCPU from "./jeeps/jaro-cpu"
+import jaroCPUUngka from "./jeeps/jaro-cpu-ungka"
+
 const jeeps = [{
     name: 'Jaro CPU',
-    routes: ['Lopez-Jaena-Jaro Plaza-E.Lopez-Luna-Bonifacio Drive-Arroyo Fountain-Iznart-JM Basa-Fort San Pedro-Duran-Santo Domingo-Plaza Libertad-to Jaro']
-
+    map: jaroCPU,
 }, {
-    name: 'Jaro Liko NFA',
-    routes: ['LopezJaena-Jaro Plaza-E.Lopez-Luna-Bonifacio-General Luna-Jalandoni (San Agustin)-DeLeon/Rizal-Super-Aldeguer-JM Basa/Muelle Loney-Bonifacio Drive - back to Jaro']
+    name: 'Jaro CPU Ungka',
+    map: jaroCPUUngka,
+}, {
+    name: 'Jaro CPU',
+    map: jaroCPU,
+}, {
+    name: 'Jaro CPU',
+    map: jaroCPU,
+}, {
+    name: 'Jaro CPU',
+    map: jaroCPU,
+}, {
+    name: 'Jaro CPU',
+    map: jaroCPU,
+}, {
+    name: 'Jaro CPU',
+    map: jaroCPU,
+}, {
+    name: 'Jaro 3333',
+    map: jaroCPU,
 }
 
 ]

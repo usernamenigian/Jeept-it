@@ -6,25 +6,23 @@ import jeeps from '../JeepsList';
 import styles from './styles';
 
 class JeepScreen extends Component {
-    render() {
-        return (
-          <ScrollView style={styles.card}>
-            {jeepList}
+  constructor(props) {
+    super(props)
+  }
+  
+  render () {
+    return (<ScrollView>
+           {jeeps.map(( jeep, index) => {
+             return (<Card key={index} style={styles.card}>
+             <Card.Title title={jeeps[index].name}/>
+              <Card.Content>
+               <Button mode="contained" onPress={() => this.props.navigation.navigate('Maps', {jeepMap: jeeps[index].map})}>Go</Button>
+              </Card.Content>
+            </Card>)
+            })}
           </ScrollView>
-        )
-    }
+    )
+  }
 }
 
-const jeepList = jeeps.map((jeep, index) => {
-  return (<Card key={index}>
-          <Card.Title title={jeeps[index].name}/>
-           <Card.Content>
-            <Button mode="contained" onPress={() => getRoutes(index)}>Go</Button>
-           </Card.Content>
-         </Card>)
-})
-
-function getRoutes(index) {
-  alert(jeeps[index].routes)
-}
 export default JeepScreen
