@@ -12,7 +12,7 @@ class JeepScreen extends Component {
   
   render () {
     return (<ScrollView>
-           {jeeps.map(( jeep, index) => {
+           {jeeps.map((jeep, index) => {
              return (<Card key={index} style={styles.card}>
              <Card.Title title={jeeps[index].name}/>
               <Card.Content>
