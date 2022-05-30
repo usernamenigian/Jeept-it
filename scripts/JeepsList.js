@@ -4,32 +4,17 @@ import jaroLikoNFA from "./jeeps/jaro-liko-nfa"
 import jaroLikoTagbak from "./jeeps/jaro-liko-tagbak"
 import villa from "./jeeps/villa"
 
-const jeeps = [{
-    name: 'Jaro CPU',
-    map: jaroCPU,
-}, {
-    name: 'Jaro CPU Ungka',
-    map: jaroCPUUngka,
-}, {
-    name: 'Jaro Liko NFA',
-    map: jaroLikoNFA,
-}, {
-    name: 'Jaro Liko Tagbak',
-    map: jaroLikoTagbak,
-}, {
-    name: 'Villa',
-    map: villa,
-}, {
-    name: 'Jaro CPU',
-    map: jaroCPU,
-}, {
-    name: 'Jaro CPU',
-    map: jaroCPU,
-}, {
-    name: 'Jaro 3333',
-    map: jaroCPU,
+class Jeep {
+    constructor (name, map) {
+        this.name = name
+        this.map = map
+    }
 }
+const jeeps = []
+const JaroCPU = new Jeep('Jaro CPU', jaroCPU)
+jeeps.push(JaroCPU)
+const JaroCPUUngka = new Jeep('Jaro CPU Ungka', jaroCPUUngka)
+jeeps.push(JaroCPUUngka)
 
-]
 
 export default jeeps
