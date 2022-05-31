@@ -15,6 +15,24 @@ const parolaSuper =
      longitudeDelta: 0.045,
     }}
    >
+    <MapViewDirections
+    origin = {{latitude: 10.692679, longitude: 122.583174}}
+    waypoints = {[{latitude: 10.692883, longitude: 122.582737},
+                  {latitude: 10.695167, longitude: 122.580010},
+                  {latitude: 10.696467, longitude: 122.579146},
+                  {latitude: 10.696371, longitude: 122.578933}, 
+                  {latitude: 10.691828, longitude: 122.573920},
+                  {latitude: 10.691663, longitude: 122.573703}, 
+                  {latitude: 10.691981, longitude: 122.571671}, 
+                  {latitude: 10.692020, longitude: 122.569031}, 
+                  {latitude: 10.691789, longitude: 122.566291}, 
+                  {latitude: 10.693443, longitude: 122.566341}]}
+    destination = {{latitude: 10.693248, longitude: 122.564065}}
+    apikey = {'AIzaSyDz4sKzFahw8gq6f045fSJ6_xTiIhX2x78'}
+    strokeWidth = {4}
+    strokeColor = "red"
+    optimizeWaypoints={true}
+   />
    <MapView.Marker
     coordinate = {{latitude: 10.692466,
     longitude: 122.583463}}
