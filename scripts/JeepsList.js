@@ -14,21 +14,21 @@ class Jeep {
     }
 }
 const jeeps = []
-const calaparanVilla = new Jeep('Calaparan Villa', calaparanVilla)
+const CalaparanVilla = new Jeep('Calaparan Villa', calaparanVilla)
 jeeps.push(calaparanVilla)
-const jaroCPU = new Jeep('Jaro CPU', jaroCPU)
+const JaroCPU = new Jeep('Jaro CPU', jaroCPU)
 jeeps.push(jaroCPU)
-const jaroCPUUngka = new Jeep('Jaro CPU Ungka', jaroCPUUngka)
+const JaroCPUUngka = new Jeep('Jaro CPU Ungka', jaroCPUUngka)
 jeeps.push(jaroCPUUngka)
-const jaroLikoNFA = new Jeep('Jaro Liko NFA', jaroLikoNFA)
+const JaroLikoNFA = new Jeep('Jaro Liko NFA', jaroLikoNFA)
 jeeps.push(jaroLikoNFA)
-const jaroLikoTagbak = new Jeep('Jaro Liko Tagbak', jaroLikoTagbak)
+const JaroLikoTagbak = new Jeep('Jaro Liko Tagbak', jaroLikoTagbak)
 jeeps.push(jaroLikoTagbak)
-const leganesSM = new Jeep('Leganes SM', leganesSM)
+const LeganesSM = new Jeep('Leganes SM', leganesSM)
 jeeps.push(leganesSM)
-const mandurriao = new Jeep('Mandurriao SM', mandurriaoSM)
-jeeps.push(mandurriao)
-const villa = new Jeep('Villa', villa)
+const Mandurriao = new Jeep('Mandurriao SM', mandurriaoSM)
+jeeps.push(mandurriaoSM)
+const Villa = new Jeep('Villa', villa)
 jeeps.push(villa)
 
 export default jeeps
