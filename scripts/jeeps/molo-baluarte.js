@@ -3,6 +3,8 @@ import MapView, { Marker } from 'react-native-maps';
 import { StyleSheet, View } from 'react-native';
 import MapViewDirections from 'react-native-maps-directions';
 
+import styles from '../screens/styles'
+
 const moloBaluarte =
   <View style = {styles.container}>
    <MapView style = {styles.map} 
