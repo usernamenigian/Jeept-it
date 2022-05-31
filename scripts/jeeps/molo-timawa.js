@@ -15,6 +15,32 @@ const moloTimawa =
      longitudeDelta: 0.045,
     }}
    >
+    <MapViewDirections
+    origin = {{latitude: 10.694324, longitude: 122.545554}}
+    waypoints = {[{latitude: 10.690953, longitude: 122.543022},
+                  {latitude: 10.695400, longitude: 122.539987}, 
+                  {latitude: 10.697343, longitude: 122.543405}, 
+                  {latitude: 10.695988, longitude: 122.544445}, 
+                  {latitude: 10.694448, longitude: 122.545641}, 
+                  {latitude: 10.695684, longitude: 122.546554}, 
+                  {latitude: 10.696546, longitude: 122.554849}, 
+                  {latitude: 10.697250, longitude: 122.561725}, 
+                  {latitude: 10.694188, longitude: 122.561758}, 
+                  {latitude: 10.696403, longitude: 122.569058}, 
+                  {latitude: 10.692150, longitude: 122.569127}, 
+                  {latitude: 10.692022, longitude: 122.569077},
+                  {latitude: 10.692035, longitude: 122.569204},
+                  {latitude: 10.692063, longitude: 122.569993},
+                  {latitude: 10.691980, longitude: 122.571659},
+                  {latitude: 10.692919, longitude: 122.572563},
+                  {latitude: 10.691805, longitude: 122.573877},
+                  {latitude: 10.691657, longitude: 122.573713}]}
+    destination = {{latitude: 10.691955, longitude: 122.571796}}
+    apikey = {'AIzaSyDz4sKzFahw8gq6f045fSJ6_xTiIhX2x78'}
+    strokeWidth = {4}
+    strokeColor = "red"
+    optimizeWaypoints={true}
+   />
    <MapView.Marker
     coordinate = {{latitude: 10.694336,
     longitude: 122.545543}}
