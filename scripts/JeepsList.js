@@ -13,22 +13,23 @@ class Jeep {
         this.map = map
     }
 }
+
 const jeeps = []
 const CalaparanVilla = new Jeep('Calaparan Villa', calaparanVilla)
-jeeps.push(calaparanVilla)
+jeeps.push(CalaparanVilla)
 const JaroCPU = new Jeep('Jaro CPU', jaroCPU)
-jeeps.push(jaroCPU)
+jeeps.push(JaroCPU)
 const JaroCPUUngka = new Jeep('Jaro CPU Ungka', jaroCPUUngka)
-jeeps.push(jaroCPUUngka)
+jeeps.push(JaroCPUUngka)
 const JaroLikoNFA = new Jeep('Jaro Liko NFA', jaroLikoNFA)
-jeeps.push(jaroLikoNFA)
+jeeps.push(JaroLikoNFA)
 const JaroLikoTagbak = new Jeep('Jaro Liko Tagbak', jaroLikoTagbak)
-jeeps.push(jaroLikoTagbak)
+jeeps.push(JaroLikoTagbak)
 const LeganesSM = new Jeep('Leganes SM', leganesSM)
-jeeps.push(leganesSM)
+jeeps.push(LeganesSM)
 const Mandurriao = new Jeep('Mandurriao SM', mandurriaoSM)
-jeeps.push(mandurriaoSM)
+jeeps.push(Mandurriao)
 const Villa = new Jeep('Villa', villa)
-jeeps.push(villa)
+jeeps.push(Villa)
 
 export default jeeps
