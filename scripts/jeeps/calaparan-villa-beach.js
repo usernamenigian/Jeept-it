@@ -1,6 +1,7 @@
 import MapView, { Marker } from 'react-native-maps';
 import { View } from 'react-native';
 import React from 'react';
+import MapViewDirections from 'react-native-maps-directions';
 
 import styles from '../screens/styles'
 
@@ -14,6 +15,34 @@ const calaparanVilla =
      longitudeDelta: 0.045,
     }}
    >
+
+   <MapViewDirections
+    origin = {{latitude: 10.691797, longitude: 122.573818}}
+    waypoints = {[{latitude: 10.692967, longitude: 122.572557},
+                  {latitude: 10.691965, longitude: 122.571612},
+                  {latitude: 10.692157, longitude: 122.569135},
+                  {latitude: 10.696469, longitude: 122.569063},
+                  {latitude: 10.694480, longitude: 122.555091},
+                  {latitude: 10.692804, longitude: 122.555181},
+                  {latitude: 10.691986, longitude: 122.549297},
+                  {latitude: 10.682024, longitude:122.539196 }]}
+    destination = {{latitude: 10.680258, longitude: 122.517407}}
+    apikey = {'AIzaSyDz4sKzFahw8gq6f045fSJ6_xTiIhX2x78'}
+    strokeWidth = {4}
+    strokeColor = "red"
+    optimizeWaypoints={true}
+   />
+   <MapViewDirections
+    origin = {{latitude: 10.692804, longitude: 122.555181}}
+    waypoints = {[{latitude: 10.696409, longitude: 122.569001},
+                  {latitude: 10.691997, longitude: 122.569237}]}
+    destination = {{latitude:10.691797, longitude: 122.573818}}
+    apikey = {'AIzaSyDz4sKzFahw8gq6f045fSJ6_xTiIhX2x78'}
+    strokeWidth = {4}
+    strokeColor = "red"
+    optimizeWaypoints={true}
+   />
+
    <MapView.Marker
     coordinate = {{latitude: 10.692331,
     longitude: 122.573544}}

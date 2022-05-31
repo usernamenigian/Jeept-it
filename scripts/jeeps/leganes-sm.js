@@ -1,6 +1,7 @@
 import MapView, { Marker } from 'react-native-maps';
 import { View } from 'react-native';
 import React from 'react';
+import MapViewDirections from 'react-native-maps-directions';
 
 import styles from '../screens/styles'
 
@@ -14,6 +15,25 @@ const leganesSM =
      longitudeDelta: 0.045,
     }}
    >
+
+   <MapViewDirections
+    origin = {{latitude: 10.786812, longitude: 122.589242}}
+    destination = {{latitude: 10.694506, longitude: 122.555167}}
+    apikey = {'AIzaSyDz4sKzFahw8gq6f045fSJ6_xTiIhX2x78'}
+    strokeWidth = {4}
+    strokeColor = "red"
+    optimizeWaypoints={true}
+   />
+   <MapViewDirections
+    origin = {{latitude: 10.694506, longitude: 122.555167}}
+    waypoints = {[{latitude: 10.719997, longitude: 122.562060}]}
+    destination = {{latitude: 10.786812, longitude: 122.589242}}
+    apikey = {'AIzaSyDz4sKzFahw8gq6f045fSJ6_xTiIhX2x78'}
+    strokeWidth = {4}
+    strokeColor = "red"
+    optimizeWaypoints={true}
+   />
+
    <MapView.Marker
     coordinate = {{latitude: 10.697060,
     longitude: 122.554458}}
