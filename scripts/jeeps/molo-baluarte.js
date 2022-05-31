@@ -15,6 +15,37 @@ const moloBaluarte =
      longitudeDelta: 0.045,
     }}
    >
+    <MapViewDirections
+    origin = {{latitude: 10.692568, longitude: 122.554742}}
+    waypoints = {[{latitude: 10.691976, longitude: 122.548752},
+                  {latitude: 10.695989, longitude: 122.544447}, 
+                  {latitude: 10.699095, longitude: 122.549774}, 
+                  {latitude: 10.699526, longitude: 122.552570}, 
+                  {latitude: 10.699590, longitude: 122.552675}, 
+                  {latitude: 10.699965, longitude: 122.555636}, 
+                  {latitude: 10.699924, longitude: 122.555782}, 
+                  {latitude: 10.701465, longitude: 122.567708}, 
+                  {latitude: 10.701708, longitude: 122.568403}, 
+                  {latitude: 10.701525, longitude: 122.569019}, 
+                  {latitude: 10.699146, longitude: 122.569073}, 
+                  {latitude: 10.696537, longitude: 122.569087},
+                  {latitude: 10.696416, longitude: 122.569166},
+                  {latitude: 10.693939, longitude: 122.570997},
+                  {latitude: 10.692933, longitude: 122.572552},
+                  {latitude: 10.691806, longitude: 122.573880},
+                  {latitude: 10.691665, longitude: 122.573714},
+                  {latitude: 10.692158, longitude: 122.569130},
+                  {latitude: 10.696494, longitude: 122.569038},
+                  {latitude: 10.693359, longitude: 122.558886},
+                  {latitude: 10.694492, longitude: 122.555097},
+                  {latitude: 10.694473, longitude: 122.555024},
+                  {latitude: 10.692822, longitude: 122.555349}]}
+    destination = {{latitude: 10.692636, longitude: 122.554946}}
+    apikey = {'AIzaSyDz4sKzFahw8gq6f045fSJ6_xTiIhX2x78'}
+    strokeWidth = {4}
+    strokeColor = "red"
+    optimizeWaypoints={true}
+   />
    <MapView.Marker
     coordinate = {{latitude: 10.692636,
     longitude: 122.554727}}
