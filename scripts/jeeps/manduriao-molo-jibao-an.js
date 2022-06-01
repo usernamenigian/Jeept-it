@@ -26,7 +26,7 @@ initialRegion = {{
     apikey = {'AIzaSyDz4sKzFahw8gq6f045fSJ6_xTiIhX2x78'}
     strokeWidth = {4}
     strokeColor = "red"
-    optimizeWaypoints={false}
+    optimizeWaypoints={true}
    />
 <MapViewDirections
     origin = {{latitude: 10.740320, longitude: 122.517204}}
@@ -39,7 +39,7 @@ initialRegion = {{
     apikey = {'AIzaSyDz4sKzFahw8gq6f045fSJ6_xTiIhX2x78'}
     strokeWidth = {4}
     strokeColor = "red"
-    optimizeWaypoints={false}
+    optimizeWaypoints={true}
    />
 <MapView.Marker
 coordinate = {{latitude: 10.725809,
@@ -84,19 +84,5 @@ export default manduriaoMolo
 
 
 
-import jaroPlazaManduriao from "./jeeps/jaro-plaza-manduriao"
-import manduriaoMolo from "./jeeps/manduriao-molo-jibao-an"
-import otonAnhawan from "./jeeps/oton-anhawan"
-import otonDerecho from "./jeeps/oton-derecho"
-import staBarbaraHiWay from "./jeeps/santa-barbara-hi-way"
 
-const jaroPlazaManduriao = new Jeep('Jaro Plaza Manduriao', jaroPlazaManduriao)
-jeeps.push(jaroPlazaManduriao)
-const manduriaoMolo = new Jeep('Manduriao Molo', manduriaoMolo)
-jeeps.push(manduriaoMolo)
-const otonAnhawan = new Jeep('Oton Anhawan', otonAnhawan)
-jeeps.push(otonAnhawan)
-const otonDerecho = new Jeep('Oton Derecho', otonDerecho)
-jeeps.push(otonDerecho)
-const staBarbaraHiWay = new Jeep('Santa Barbara High Way', staBarbaraHiWay)
-jeeps.push(staBarbaraHiWay)
+

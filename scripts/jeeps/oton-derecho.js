@@ -28,7 +28,7 @@ initialRegion = {{
     apikey = {'AIzaSyDz4sKzFahw8gq6f045fSJ6_xTiIhX2x78'}
     strokeWidth = {4}
     strokeColor = "red"
-    optimizeWaypoints={false}
+    optimizeWaypoints={true}
    />
 
 <MapViewDirections
@@ -44,7 +44,7 @@ initialRegion = {{
     apikey = {'AIzaSyDz4sKzFahw8gq6f045fSJ6_xTiIhX2x78'}
     strokeWidth = {4}
     strokeColor = "red"
-    optimizeWaypoints={false}
+    optimizeWaypoints={true}
    />
 
 <MapView.Marker
