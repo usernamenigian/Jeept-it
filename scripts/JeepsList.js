@@ -10,6 +10,11 @@ import moloBaluarte from "./jeeps/molo-baluarte"
 import moloTimawa from "./jeeps/molo-timawa"
 import parolaSuper from "./jeeps/parola-super"
 import villa from "./jeeps/villa"
+import jaroPlazaManduriao from "./jeeps/jaro-plaza-manduriao"
+import manduriaoMolo from "./jeeps/manduriao-molo-jibao-an"
+import otonAnhawan from "./jeeps/oton-anhawan"
+import otonDerecho from "./jeeps/oton-derecho"
+import staBarbaraHiWay from "./jeeps/santa-barbara-hi-way"
 
 
 class Jeep {
@@ -44,6 +49,16 @@ const ParolaSuper = new Jeep('Parola Super', parolaSuper)
 jeeps.push(ParolaSuper)
 const Villa = new Jeep('Villa', villa)
 jeeps.push(Villa)
+const jaroPlazaManduriao = new Jeep('Jaro Plaza Manduriao', jaroPlazaManduriao)
+jeeps.push(jaroPlazaManduriao)
+const manduriaoMolo = new Jeep('Manduriao Molo', manduriaoMolo)
+jeeps.push(manduriaoMolo)
+const otonAnhawan = new Jeep('Oton Anhawan', otonAnhawan)
+jeeps.push(otonAnhawan)
+const otonDerecho = new Jeep('Oton Derecho', otonDerecho)
+jeeps.push(otonDerecho)
+const staBarbaraHiWay = new Jeep('Santa Barbara High Way', staBarbaraHiWay)
+jeeps.push(staBarbaraHiWay)
 
 
 
