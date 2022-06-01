@@ -3,7 +3,6 @@ import { ScrollView } from 'react-native';
 import { Card } from 'react-native-paper';
 import { Table, Row, Rows } from 'react-native-table-component';
 import fare from '../Fare';
-
 import styles from './styles';
 
 const content = {

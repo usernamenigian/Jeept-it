@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
 import { Button, Card } from 'react-native-paper';
-
 import styles from './styles';
 
 class HomeScreen extends Component {

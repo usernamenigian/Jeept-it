@@ -2,7 +2,6 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { Provider as PaperProvider } from 'react-native-paper';
-
 import WelcomeScreen from './scripts/screens/WelcomeScreen'
 import HomeScreen from './scripts/screens/HomeScreen';
 import FareScreen from './scripts/screens/FareScreen';

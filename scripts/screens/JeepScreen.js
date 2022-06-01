@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { ScrollView } from 'react-native';
 import { Card, Button } from 'react-native-paper';
-
 import jeeps from '../JeepsList';
 import styles from './styles';
 
