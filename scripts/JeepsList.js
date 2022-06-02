@@ -15,6 +15,12 @@ import manduriaoMolo from "./jeeps/manduriao-molo-jibao-an"
 import otonAnhawan from "./jeeps/oton-anhawan"
 import otonDerecho from "./jeeps/oton-derecho"
 import staBarbaraHiWay from "./jeeps/santa-barbara-hi-way"
+import bitoonJaroPlaza from "./jeeps/bitoon-jaro-plaza"
+import lapaz from "./jeeps/lapaz"
+import lapuz from "./jeeps/lapuz"
+import ungkaTanza from "./jeeps/ungka-tanza"
+import barrioObrero from "./jeeps/barrio-obrero"
+import barrioObrero from "./jeeps/barrio-obrero"
 
 
 class Jeep {
@@ -59,11 +65,16 @@ const StaBarbaraHiWay = new Jeep('Santa Barbara High Way', staBarbaraHiWay)
 jeeps.push(StaBarbaraHiWay)
 const Villa = new Jeep('Villa', villa)
 jeeps.push(Villa)
-
-
-
-
-
+const BitoonJaroPlaza = new Jeep('Bitoon Jaro Plaza', bitoonJaroPlaza)
+jeeps.push(BitoonJaroPlaza)
+const Lapaz = new Jeep('Lapaz', lapaz)
+jeeps.push(Lapaz)
+const Lapuz = new Jeep('Lapuz', lapuz)
+jeeps.push(Lapuz)
+const UngkaTanza = new Jeep('Ungka Tanza', ungkaTanza)
+jeeps.push(UngkaTanza)
+const BarrioObrero = new Jeep('Barrio Obrero', barrioObrero)
+jeeps.push(BarrioObrero)
 
 
 export default jeeps
