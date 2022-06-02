@@ -14,6 +14,24 @@ initialRegion = {{
     longitudeDelta: 0.045,
    }}>
 
+<MapViewDirections
+    origin = {{latitude: 10.746258, longitude: 122.539106}}
+    waypoints = {[{latitude: 10.742185, longitude: 122.539294},
+                  {latitude: 10.738248, longitude: 122.538188},
+                  {latitude: 10.730363, longitude: 122.543466},
+                  {latitude: 10.724114, longitude: 122.550004},
+                  {latitude: 10.719482, longitude: 122.552113},
+                  {latitude: 10.709553, longitude: 122.551626},
+                  {latitude: 10.699759, longitude: 122.55415},
+                  {latitude: 10.698835, longitude: 122.554505}
+                ]}
+    destination = {{latitude:10.695679, longitude: 122.554823}}
+    apikey = {'AIzaSyDz4sKzFahw8gq6f045fSJ6_xTiIhX2x78'}
+    strokeWidth = {4}
+    strokeColor = "red"
+    optimizeWaypoints={true}
+   />
+
 <MapView.Marker
 coordinate = {{latitude: 10.745352,
     longitude: 122.540766}}

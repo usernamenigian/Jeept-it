@@ -4,7 +4,7 @@ import React from 'react';
 import MapViewDirections from 'react-native-maps-directions';
 import styles from '../screens/styles'
 
-const bitoonJaroPlaza = 
+const bitoonJaroPlaza =
 <View style = {styles.container}>
 <MapView style = {styles.map}
 initialRegion = {{
@@ -13,6 +13,25 @@ initialRegion = {{
     latitudeDelta: 0.1,
     longitudeDelta: 0.045,
    }}>
+
+<MapViewDirections
+    origin = {{latitude: 10.751351, longitude: 122.589251}}
+    waypoints = {[{latitude: 10.747546, longitude: 122.587892},
+                  {latitude: 10.74483, longitude: 122.585992},
+                  {latitude: 10.740508, longitude: 122.582824},
+                  {latitude: 10.738541, longitude: 122.577522},
+                  {latitude: 10.729429, longitude: 122.560425},
+                  {latitude: 10.730158, longitude: 122.559123},
+                  {latitude: 10.725845, longitude: 122.557732},
+                  {latitude: 10.725544, longitude: 122.557081},
+                  {latitude: 10.72462, longitude: 122.556396}
+                ]}
+    destination = {{latitude:10.724026, longitude: 122.556851}}
+    apikey = {'AIzaSyDz4sKzFahw8gq6f045fSJ6_xTiIhX2x78'}
+    strokeWidth = {4}
+    strokeColor = "red"
+    optimizeWaypoints={true}
+   />
 
 <MapView.Marker
 coordinate = {{latitude: 10.750625,
