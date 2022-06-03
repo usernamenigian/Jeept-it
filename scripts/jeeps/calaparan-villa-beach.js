@@ -1,10 +1,17 @@
 import MapView, { Marker } from 'react-native-maps';
+import React, { Component } from 'react';
 import { View } from 'react-native';
-import React from 'react';
 import MapViewDirections from 'react-native-maps-directions';
+
 import styles from '../screens/styles'
 
-const calaparanVilla =
+export const calaparanVillaMarkers = 
+[{value: 'marker1', latitude: 10.691797, longitude: 122.573818}, 
+{value: 'marker2', latitude: 10.692967, longitude: 122.572557}
+
+]
+
+export const calaparanVilla =
   <View style = {styles.container}>
    <MapView style = {styles.map} 
     initialRegion = {{
@@ -98,5 +105,3 @@ const calaparanVilla =
     />
    </MapView> 
   </View>
-
-export default calaparanVilla;
