@@ -6,11 +6,25 @@ import { Dropdown } from 'react-native-material-dropdown-v2';
 class MapScreen extends Component {
   constructor(props) {
     super(props)
-    
+    this.state={
+    data: this.props.route.params.points,
+    index1: 0,
+    index2: 0
+    }
   }
-  points = this.props.route.params.points
+
+  getIndex1 = (value, i, data) => {
+    this.setState({index1: i})
+    console.log(i);
+  }
+
+  getIndex2 = (value, i, data) => {
+    this.setState({index2: i})
+    console.log(i);
+  }
 
   render () {
+     const points = this.state.data
         return (
           <View>
 
@@ -20,17 +34,17 @@ class MapScreen extends Component {
 
              <Dropdown
             label = 'Origin'
-            data = {this.points}
-            onChangeText={this.onChangeText}
+            data = {points}
+            onChangeText={this.getIndex1}
             />
 
             <Dropdown
             label = 'Destination'
-            data = {this.points}
-            onChangeText={this.onChangeText}
+            data = {points}
+            onChangeText={this.getIndex2}
             />
 
-            <Text>Total Distance: {calculateDistance(this.points[0], this.points[1])}</Text>
+            <Text>Total Distance: {calculateDistance(points[this.state.index1], points[this.state.index2])} KM</Text>
       
             </Card.Content>
           </Card>
@@ -45,15 +59,18 @@ class MapScreen extends Component {
 }
 
 //Haversine formula
-function calculateDistance(mk1, mk2) {
-  var R = 6371.0710; // Radius of the Earth in miles
-  var rlat1 = mk1.latitude * (Math.PI/180); // Convert degrees to radians
-  var rlat2 = mk2.latitude * (Math.PI/180); // Convert degrees to radians
-  var difflat = rlat2-rlat1; // Radian difference (latitudes)
-  var difflon = (mk2.longitude-mk1.longitude) * (Math.PI/180); // Radian difference (longitudes)
+function calculateDistance(marker1, marker2) {
+  let R = 6371.0710 // Radius of the Earth in km
+  let rlat1 = marker1.latitude * (Math.PI/180) // Convert degrees to radians
+  let rlat2 = marker2.latitude * (Math.PI/180) // Convert degrees to radians
+  let difflat = rlat2 - rlat1 // Radian difference (latitudes)
+  let difflon = (marker2.longitude - marker1.longitude) * (Math.PI/180) // Radian difference (longitudes)
   
-  var d = 2 * R * Math.asin(Math.sqrt(Math.sin(difflat/2)*Math.sin(difflat/2)+Math.cos(rlat1)*Math.cos(rlat2)*Math.sin(difflon/2)*Math.sin(difflon/2)));
-      return d
+  let distance = 2 * R * Math.asin(Math.sqrt(Math.sin(difflat / 2) * Math.sin(difflat / 2) +
+  Math.cos(rlat1) * Math.cos(rlat2) * Math.sin(difflon / 2) * Math.sin(difflon / 2)))
+  
+  console.log('Exact distance: ' + distance)
+  return Math.ceil(distance)
 }
 
 export default MapScreen
