@@ -1,15 +1,15 @@
 import {calaparanVilla, calaparanVillaMarkers} from "./jeeps/calaparan-villa-beach"
-import jaroCPU from "./jeeps/jaro-cpu"
-import jaroCPUUngka from "./jeeps/jaro-cpu-ungka"
-import jaroLikoNFA from "./jeeps/jaro-liko-nfa"
-import jaroLikoTagbak from "./jeeps/jaro-liko-tagbak"
+import jaroCPU, { jaroCPUMarkers } from "./jeeps/jaro-cpu"
+import jaroCPUUngka, { jaroCPUUngkaMarkers } from "./jeeps/jaro-cpu-ungka"
+import jaroLikoNFA, { jaroLikoNFAMarkers } from "./jeeps/jaro-liko-nfa"
+import jaroLikoTagbak, { jaroLikoTagbakMarkers } from "./jeeps/jaro-liko-tagbak"
 import leganesLapaz from "./jeeps/leganes-lapaz"
 import leganesSM from "./jeeps/leganes-sm"
 import mandurriaoSM from "./jeeps/mandurriao-sm"
 import moloBaluarte from "./jeeps/molo-baluarte"
 import moloTimawa from "./jeeps/molo-timawa"
 import parolaSuper from "./jeeps/parola-super"
-import villa from "./jeeps/villa"
+import villa, { villaMarkers } from "./jeeps/villa"
 
 class Jeep {
     constructor(name, map, points) {
@@ -22,13 +22,13 @@ class Jeep {
 const jeeps = []
 const CalaparanVilla = new Jeep('Calaparan Villa', calaparanVilla, calaparanVillaMarkers)
 jeeps.push(CalaparanVilla)
-const JaroCPU = new Jeep('Jaro CPU', jaroCPU)
+const JaroCPU = new Jeep('Jaro CPU', jaroCPU, jaroCPUMarkers)
 jeeps.push(JaroCPU)
-const JaroCPUUngka = new Jeep('Jaro CPU Ungka', jaroCPUUngka)
+const JaroCPUUngka = new Jeep('Jaro CPU Ungka', jaroCPUUngka, jaroCPUUngkaMarkers)
 jeeps.push(JaroCPUUngka)
-const JaroLikoNFA = new Jeep('Jaro Liko NFA', jaroLikoNFA)
+const JaroLikoNFA = new Jeep('Jaro Liko NFA', jaroLikoNFA, jaroLikoNFAMarkers)
 jeeps.push(JaroLikoNFA)
-const JaroLikoTagbak = new Jeep('Jaro Liko Tagbak', jaroLikoTagbak)
+const JaroLikoTagbak = new Jeep('Jaro Liko Tagbak', jaroLikoTagbak, jaroLikoTagbakMarkers)
 jeeps.push(JaroLikoTagbak)
 const LeganesLapaz = new Jeep('Leganes Lapaz', leganesLapaz)
 jeeps.push(LeganesLapaz)
@@ -42,7 +42,7 @@ const MoloTimawa = new Jeep('Molo Timawa', moloTimawa)
 jeeps.push(MoloTimawa)
 const ParolaSuper = new Jeep('Parola Super', parolaSuper)
 jeeps.push(ParolaSuper)
-const Villa = new Jeep('Villa', villa)
+const Villa = new Jeep('Villa', villa, villaMarkers)
 jeeps.push(Villa)
 
 export default jeeps

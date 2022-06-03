@@ -4,7 +4,20 @@ import { View } from 'react-native';
 import MapViewDirections from 'react-native-maps-directions';
 import styles from '../screens/styles'
 
-const jaroLikoNFA =
+export const jaroLikoNFAMarkers = 
+[
+  {value: 'Central Philippine University',latitude: 10.7310066, longitude: 122.5491166 },
+  {value: 'Jaro Plaza', latitude: 10.7244118, longitude: 122.5573263  },
+  {value: 'Jollibee', latitude: 10.7190179, longitude: 122.5608054},
+  {value: 'West Visayas State University', latitude: 10.7135681, longitude: 122.5624973},
+  {value: 'Gaisano Capital City', latitude: 10.7068854, longitude: 122.5666009 },
+  {value: 'The Atrium', latitude: 10.7006106, longitude: 122.5682697 },
+  {value: 'University of San Agustin', latitude: 10.6994123, longitude: 122.5630039 },
+  {value: 'Robinsons Place', latitude: 10.6941958, longitude: 122.565573},
+  {value: 'Iloilo City Central Public Market', latitude: 10.6926913, longitude: 122.5695755 },
+  {value: 'Arroyo Fountain', latitude: 10.7015547, longitude: 122.5690689}
+]
+export const jaroLikoNFA =
 <View style={styles.container}>
 <MapView
   style={styles.map}
@@ -87,4 +100,3 @@ const jaroLikoNFA =
 </MapView>
 </View>
 
-export default jaroLikoNFA
