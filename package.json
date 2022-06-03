@@ -21,7 +21,8 @@
     "@react-navigation/native-stack": "*",
     "react-native-table-component": "^1.2.2",
     "react-native-maps": "0.29.4",
-    "react-native-maps-directions": "1.8.0"
+    "react-native-maps-directions": "1.8.0",
+    "react-native-material-dropdown-v2": "*"
   },
   "private": true
 }
