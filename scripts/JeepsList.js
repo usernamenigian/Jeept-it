@@ -1,8 +1,8 @@
 import {calaparanVilla, calaparanVillaMarkers} from "./jeeps/calaparan-villa-beach"
-import jaroCPU, { jaroCPUMarkers } from "./jeeps/jaro-cpu"
-import jaroCPUUngka, { jaroCPUUngkaMarkers } from "./jeeps/jaro-cpu-ungka"
-import jaroLikoNFA, { jaroLikoNFAMarkers } from "./jeeps/jaro-liko-nfa"
-import jaroLikoTagbak, { jaroLikoTagbakMarkers } from "./jeeps/jaro-liko-tagbak"
+import {jaroCPU, jaroCPUMarkers} from "./jeeps/jaro-cpu"
+import {jaroCPUUngka, jaroCPUUngkaMarkers} from "./jeeps/jaro-cpu-ungka"
+import {jaroLikoNFA, jaroLikoNFAMarkers} from "./jeeps/jaro-liko-nfa"
+import {jaroLikoTagbak, jaroLikoTagbakMarkers} from "./jeeps/jaro-liko-tagbak"
 import leganesLapaz from "./jeeps/leganes-lapaz"
 import leganesSM from "./jeeps/leganes-sm"
 import mandurriaoSM from "./jeeps/mandurriao-sm"
@@ -12,10 +12,10 @@ import parolaSuper from "./jeeps/parola-super"
 import villa, { villaMarkers } from "./jeeps/villa"
 
 class Jeep {
-    constructor(name, map, points) {
+    constructor(name, map, markers) {
         this.name = name
         this.map = map
-        this.points = points
+        this.markers = markers
     }
 }
 

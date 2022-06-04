@@ -1,5 +1,5 @@
+import React from 'react';
 import MapView, { Marker } from 'react-native-maps';
-import React, { Component } from 'react';
 import { View } from 'react-native';
 import MapViewDirections from 'react-native-maps-directions';
 

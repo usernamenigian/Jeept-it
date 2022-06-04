@@ -3,11 +3,13 @@ import { View, Text } from 'react-native';
 import { Card } from 'react-native-paper';
 import { Dropdown } from 'react-native-material-dropdown-v2';
 
+import fare from '../Fare'
+
 class MapScreen extends Component {
   constructor(props) {
     super(props)
     this.state={
-    data: this.props.route.params.points,
+    data: this.props.route.params.markers,
     index1: 0,
     index2: 0
     }
@@ -24,7 +26,7 @@ class MapScreen extends Component {
   }
 
   render () {
-     const points = this.state.data
+     const markers = this.state.data
         return (
           <View>
 
@@ -34,17 +36,18 @@ class MapScreen extends Component {
 
              <Dropdown
             label = 'Origin'
-            data = {points}
+            data = {markers}
             onChangeText={this.getIndex1}
             />
 
             <Dropdown
             label = 'Destination'
-            data = {points}
+            data = {markers}
             onChangeText={this.getIndex2}
             />
 
-            <Text>Total Distance: {calculateDistance(points[this.state.index1], points[this.state.index2])} KM</Text>
+            <Text>Total Distance: {calculateDistance(markers[this.state.index1], markers[this.state.index2])} KM</Text>
+            <Text>Total Fare: {calcluteTotalFare(calculateDistance(markers[this.state.index1], markers[this.state.index2]))}</Text>
       
             </Card.Content>
           </Card>
@@ -69,8 +72,16 @@ function calculateDistance(marker1, marker2) {
   let distance = 2 * R * Math.asin(Math.sqrt(Math.sin(difflat / 2) * Math.sin(difflat / 2) +
   Math.cos(rlat1) * Math.cos(rlat2) * Math.sin(difflon / 2) * Math.sin(difflon / 2)))
   
-  console.log('Exact distance: ' + distance)
+  console.log('Exact distance: ' + distance + 'KM')
   return Math.ceil(distance)
+}
+
+function calcluteTotalFare(distance) {
+  for (let i = 0; i < fare.length; i++) {
+    if (distance === fare[i][0]) {
+      return fare[i][1] + 'PHP regular ' + fare[i][2] + 'PHP discounted'
+    }
+  }
 }
 
 export default MapScreen

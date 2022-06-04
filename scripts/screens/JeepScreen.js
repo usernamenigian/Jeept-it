@@ -15,7 +15,8 @@ class JeepScreen extends Component {
              return (<Card key={index} style={styles.card}>
              <Card.Title title={jeeps[index].name}/>
               <Card.Content>
-               <Button mode="contained" onPress={() => this.props.navigation.navigate('Maps', {jeepMap: jeeps[index].map})}>Go</Button>
+               <Button mode="contained" onPress={() => this.props.navigation.navigate('Maps', {jeepMap: jeeps[index].map, 
+                name: jeeps[index].name, markers: jeeps[index].markers})}>Go</Button>
               </Card.Content>
             </Card>)
             })}

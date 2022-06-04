@@ -56,10 +56,10 @@ const styles = StyleSheet.create({
           }, 
           map: {
             position: 'absolute',
-            top: 25,
+            top: 0,
             left: 25,
             right: 25,
-            bottom: 500,
+            bottom: 550,
           }
 })
 
