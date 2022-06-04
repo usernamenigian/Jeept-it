@@ -5,7 +5,7 @@ import {jaroCPU, jaroCPUMarkers} from "./jeeps/jaro-cpu"
 import {jaroCPUUngka, jaroCPUUngkaMarkers} from "./jeeps/jaro-cpu-ungka"
 import {jaroLikoNFA, jaroLikoNFAMarkers} from "./jeeps/jaro-liko-nfa"
 import {jaroLikoTagbak, jaroLikoTagbakMarkers} from "./jeeps/jaro-liko-tagbak"
-import lapaz from "./jeeps/lapaz"
+import {lapaz, lapazMarkers} from "./jeeps/lapaz"
 import lapuz from "./jeeps/lapuz"
 import {leganesLapaz, leganesLapazMarkers} from "./jeeps/leganes-lapaz"
 import {leganesSM, leganesSMMarkers} from "./jeeps/leganes-sm"
@@ -39,7 +39,7 @@ const JaroLikoNFA = new Jeep('Jaro Liko NFA', jaroLikoNFA, jaroLikoNFAMarkers)
 jeeps.push(JaroLikoNFA)
 const JaroLikoTagbak = new Jeep('Jaro Liko Tagbak', jaroLikoTagbak, jaroLikoTagbakMarkers)
 jeeps.push(JaroLikoTagbak)
-const Lapaz = new Jeep('Lapaz', lapaz)
+const Lapaz = new Jeep('Lapaz', lapaz, lapazMarkers)
 jeeps.push(Lapaz)
 const Lapuz = new Jeep('Lapuz', lapuz)
 jeeps.push(Lapuz)
