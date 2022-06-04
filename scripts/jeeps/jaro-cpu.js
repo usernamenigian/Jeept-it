@@ -58,56 +58,15 @@ export const jaroCPU =
     optimizeWaypoints={true}
   />
 
-  <MapView.Marker
-    coordinate={{ latitude: 10.7310066, longitude: 122.5491166 }}
-    pinColor={'red'}
-    title={'Central Philippine University'}
-  />
-  <MapView.Marker
-    coordinate={{ latitude: 10.7244118, longitude: 122.5573263 }}
-    pinColor={'red'}
-    title={'Jaro Plaza'}
-  />
-  <MapView.Marker
-    coordinate={{ latitude: 10.7190179, longitude: 122.5608054 }}
-    pinColor={'red'}
-    title={'Jollibee'}
-  />
-  <MapView.Marker
-    coordinate={{ latitude: 10.7135681, longitude: 122.5624973 }}
-    pinColor={'red'}
-    title={'West Visayas State University'}
-  />
-  <MapView.Marker
-    coordinate={{ latitude: 10.7068854, longitude: 122.5666009 }}
-    pinColor={'red'}
-    title={'Gaisano Capital City'}
-  />
-  <MapView.Marker
-    coordinate={{ latitude: 10.7015547, longitude: 122.5690689 }}
-    pinColor={'red'}
-    title={'Arroyo Fountain'}
-  />
-  <MapView.Marker
-    coordinate={{ latitude: 10.6967916, longitude: 122.5689268 }}
-    pinColor={'red'}
-    title={'Jollibee'}
-  />
-  <MapView.Marker
-    coordinate={{latitude: 10.693033218383789, longitude: 122.572509765625,}}
-    pinColor={'red'}
-    title={'Museum of Philippine Economic History'}
-  />
-  <MapView.Marker
-    coordinate={{ latitude: 10.6926236, longitude: 122.573675 }}
-    pinColor={'red'}
-    title={'Plaza Libertad'}
-  />
-  <MapView.Marker
-    coordinate={{latitude: 10.691514696588158,longitude: 122.58258372479348 }}
-    pinColor={'red'}
-    title={'City Mall Parola'}
-  />
+  {jaroCPUMarkers.map((marker, index) => {
+             return (<MapView.Marker
+             coordinate = {{latitude: jaroCPUMarkers[index].latitude,
+             longitude: jaroCPUMarkers[index].longitude}}
+             pinColor = {"red"}
+             title = {jaroCPUMarkers[index].value}
+             /> 
+             )})
+  }
 </MapView>
 </View>
 
