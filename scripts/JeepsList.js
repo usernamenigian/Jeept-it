@@ -1,4 +1,4 @@
-import barrioObrero from "./jeeps/barrio-obrero"
+import {barrioObrero, barrioObreroMarkers} from "./jeeps/barrio-obrero"
 import bitoonJaroPlaza from "./jeeps/bitoon-jaro-plaza"
 import {calaparanVilla, calaparanVillaMarkers} from "./jeeps/calaparan-villa-beach"
 import {jaroCPU, jaroCPUMarkers} from "./jeeps/jaro-cpu"
@@ -25,7 +25,7 @@ class Jeep {
 }
 
 const jeeps = []
-const BarrioObrero = new Jeep('Barrio Obrero', barrioObrero)
+const BarrioObrero = new Jeep('Barrio Obrero', barrioObrero, barrioObreroMarkers)
 jeeps.push(BarrioObrero)
 const BitoonJaroPlaza = new Jeep('Bitoon Jaro Plaza', bitoonJaroPlaza)
 jeeps.push(BitoonJaroPlaza)

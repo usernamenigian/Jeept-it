@@ -25,7 +25,7 @@ export const parolaSuper =
      latitudeDelta: 0.1,
      longitudeDelta: 0.045,
     }}
-   >
+  >
 
   <MapViewDirections
     origin = {{latitude: 10.692679, longitude: 122.583174}}
