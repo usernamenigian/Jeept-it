@@ -8,16 +8,16 @@ import styles from '../screens/styles'
 export const jaroCPUUngkaMarkers = 
 [
   {value: 'Christ The King Memorial Park', latitude: 10.7457002, longitude: 122.5408506},
-  {value: 'Central Philippine University',latitude: 10.7310066, longitude: 122.5491166 },
-  {value: 'Jaro Plaza', latitude: 10.7244118, longitude: 122.5573263  },
+  {value: 'Central Philippine University', latitude: 10.7310066, longitude: 122.5491166},
+  {value: 'Jaro Plaza', latitude: 10.7244118, longitude: 122.5573263},
   {value: 'Jollibee', latitude: 10.7190179, longitude: 122.5608054},
-  {value:'West Visayas State University', latitude: 10.7135681, longitude: 122.5624973},
-  {value:'Gaisano Capital City', latitude: 10.7068854, longitude: 122.5666009 },
-  {value:'Arroyo Fountain', latitude: 10.7015547, longitude: 122.5690689 },
-  {value:'Jollibee',  latitude: 10.6967916, longitude: 122.5689268 },
-  {value:'Museum of Philippine Economic History', latitude: 10.693033218383789, longitude: 122.572509765625,},
-  {value:'Plaza Libertad',latitude: 10.6926236, longitude: 122.573675 },
-  {value:'City Mall Parola', latitude: 10.691514696588158, longitude: 122.58258372479348,}
+  {value: 'West Visayas State University', latitude: 10.7135681, longitude: 122.5624973},
+  {value: 'Gaisano Capital City', latitude: 10.7068854, longitude: 122.5666009},
+  {value: 'Arroyo Fountain', latitude: 10.7015547, longitude: 122.5690689},
+  {value: 'Jollibee',  latitude: 10.6967916, longitude: 122.5689268},
+  {value: 'Museum of Philippine Economic History', latitude: 10.693033218383789, longitude: 122.572509765625},
+  {value: 'Plaza Libertad', latitude: 10.6926236, longitude: 122.573675},
+  {value: 'City Mall Parola', latitude: 10.691514696588158, longitude: 122.58258372479348}
 ]
 
 export const jaroCPUUngka =
@@ -32,9 +32,9 @@ export const jaroCPUUngka =
   }}>
   
   <MapViewDirections
-    origin={{ latitude: 10.7457002, longitude:  122.5408506  }}
+    origin={{ latitude: 10.7457002, longitude:  122.5408506}}
     waypoints={[
-      { latitude: 10.691613003096371, longitude: 122.57402551918958 },
+      {latitude: 10.691613003096371, longitude: 122.57402551918958},
       {latitude: 10.735895664364957, longitude: 122.54611724419127}
     ]}
     destination={{
@@ -53,7 +53,7 @@ export const jaroCPUUngka =
       longitude: 122.58258372479348,
     }}
     waypoints={[
-      { latitude: 10.693619677178722, longitude: 122.579265963030689 },
+      { latitude: 10.693619677178722, longitude: 122.579265963030689},
     ]}
     destination={{
       latitude: 10.6926236,
@@ -74,5 +74,6 @@ export const jaroCPUUngka =
              /> 
              )})
   }
+  
 </MapView>
 </View>

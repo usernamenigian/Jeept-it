@@ -37,13 +37,14 @@ export const calaparanVilla =
                   {latitude: 10.694480, longitude: 122.555091},
                   {latitude: 10.692804, longitude: 122.555181},
                   {latitude: 10.691986, longitude: 122.549297},
-                  {latitude: 10.682024, longitude:122.539196 }]}
+                  {latitude: 10.682024, longitude: 122.539196}]}
     destination = {{latitude: 10.680258, longitude: 122.517407}}
     apikey = {'AIzaSyDz4sKzFahw8gq6f045fSJ6_xTiIhX2x78'}
     strokeWidth = {4}
     strokeColor = "red"
     optimizeWaypoints={true}
    />
+   
    <MapViewDirections
     origin = {{latitude: 10.692804, longitude: 122.555181}}
     waypoints = {[{latitude: 10.696409, longitude: 122.569001},
@@ -64,5 +65,6 @@ export const calaparanVilla =
     /> 
     )})
    }
+
    </MapView> 
   </View>

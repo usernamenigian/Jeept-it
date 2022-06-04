@@ -29,9 +29,9 @@ export const jaroCPU =
     longitudeDelta: 0.045,
   }}>
   <MapViewDirections
-    origin={{ latitude: 10.7310066, longitude: 122.5491166 }}
+    origin={{latitude: 10.7310066, longitude: 122.5491166}}
     waypoints={[
-      { latitude: 10.691613003096371, longitude: 122.57402551918958 },
+      {latitude: 10.691613003096371, longitude: 122.57402551918958},
     ]}
     destination={{
       latitude: 10.691514696588158,
@@ -44,9 +44,9 @@ export const jaroCPU =
   />
 
   <MapViewDirections
-    origin={{ latitude: 10.691514696588158, longitude: 122.58258372479348 }}
+    origin={{latitude: 10.691514696588158, longitude: 122.58258372479348}}
     waypoints={[
-      { latitude: 10.693619677178722, longitude: 122.579265963030689 }
+      {latitude: 10.693619677178722, longitude: 122.579265963030689}
     ]}
     destination={{
       latitude: 10.6926236,
