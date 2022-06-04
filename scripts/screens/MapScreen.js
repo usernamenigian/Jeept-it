@@ -17,12 +17,10 @@ class MapScreen extends Component {
 
   getIndex1 = (value, i, data) => {
     this.setState({index1: i})
-    console.log(i);
   }
 
   getIndex2 = (value, i, data) => {
     this.setState({index2: i})
-    console.log(i);
   }
 
   render () {
