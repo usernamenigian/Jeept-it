@@ -31,6 +31,7 @@ export const leganesLapaz =
       longitudeDelta: 0.045,
     }}
    >
+     
   <MapViewDirections
     origin = {{latitude: 10.786766, longitude: 122.589266}}
     waypoints = {[{latitude: 10.784386, longitude: 122.587710},

@@ -1,20 +1,51 @@
 import React from 'react';
 import MapView, { Marker } from 'react-native-maps';
-import { StyleSheet, View } from 'react-native';
+import { View } from 'react-native';
 import MapViewDirections from 'react-native-maps-directions';
 import styles from '../screens/styles'
 
-const moloTimawa =
+export const moloTimawaMarkers = 
+[
+  {value: '611 Lopez Jaena St, Molo', latitude: 10.694336, longitude: 122.545543},
+  {value: 'Tibiao Bakery, Inc.-Iloilo Main Branch', latitude: 10.690980, longitude: 122.543014},
+  {value: 'Dino Coffe shop', latitude: 10.692491, longitude: 122.541842},
+  {value: 'Esperanza’s', latitude: 10.694092, longitude: 122.540663},
+  {value: 'Holy Rosary Academy', latitude: 10.694671, longitude: 122.540591},
+  {value: 'JRC Glass Supply', latitude: 10.695474, longitude: 122.540216},
+  {value: 'Iloilo Southprime Developers Inc', latitude: 10.696261, longitude: 122.541706},
+  {value: 'Jollibee Iloilo Molo DT', latitude: 10.696948, longitude: 122.543037},
+  {value: 'M Lhuillier', latitude: 10.696073, longitude: 122.544317},
+  {value: 'St. Therese Chapels', latitude: 10.695240, longitude: 122.545186},
+  {value: 'Mr Isada', latitude: 10.695808, longitude: 122.547613},
+  {value: `Iloilo Doctors' Hospital, Inc.`, latitude: 10.696662, longitude: 122.554456},
+  {value: '88 Plaza Hotel', latitude: 10.697329, longitude: 122.560518},
+  {value: 'University of San Agustin Gymnasium', latitude: 10.696843, longitude: 122.561798},
+  {value: 'EON CENTENNIAL PLAZA HOTEL', latitude: 10.694905, longitude: 122.561794},
+  {value: '7-Eleven', latitude: 10.694197, longitude: 122.561873},
+  {value: 'Go Hotels Iloilo', latitude: 10.694999, longitude: 122.565113},
+  {value: 'Unitop', latitude: 10.696563, longitude: 122.568464},
+  {value: 'China Bank - Iloilo-Mabini', latitude: 10.694861, longitude: 122.569151},
+  {value: 'Iloilo Central Market', latitude: 10.692962, longitude: 122.569147},
+  {value: 'Phinma University Of Iloilo', latitude: 10.691986, longitude: 122.569595},
+  {value: 'UCKG ILOILO', latitude: 10.692040, longitude: 122.571525},
+  {value: 'Shell', latitude: 10.692834, longitude: 122.572555},
+  {value: 'Mercury Drugstore(Plaza Libertad)', latitude: 10.691902, longitude: 122.573667},
+  {value: 'Pacifica Agrivet Suppies', latitude: 10.691721, longitude: 122.573485},
+  {value: 'Rizal Street', latitude: 10.691976, longitude: 122.571793}
+]
+
+export const moloTimawa =
   <View style = {styles.container}>
-   <MapView style = {styles.map} 
-    initialRegion = {{
-     latitude: 10.694336,
-     longitude: 122.545543,
-     latitudeDelta: 0.1,
-     longitudeDelta: 0.045,
+    <MapView style = {styles.map} 
+      initialRegion = {{
+      latitude: 10.694336,
+      longitude: 122.545543,
+      latitudeDelta: 0.1,
+      longitudeDelta: 0.045,
     }}
    >
-    <MapViewDirections
+
+  <MapViewDirections
     origin = {{latitude: 10.694324, longitude: 122.545554}}
     waypoints = {[{latitude: 10.690953, longitude: 122.543022},
                   {latitude: 10.695400, longitude: 122.539987}, 
@@ -39,164 +70,18 @@ const moloTimawa =
     strokeWidth = {4}
     strokeColor = "red"
     optimizeWaypoints={true}
-   />
-   <MapView.Marker
-    coordinate = {{latitude: 10.694336,
-    longitude: 122.545543}}
-    pinColor = {"red"}
-    title = {"611 Lopez Jaena St, Molo"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.690980,
-    longitude: 122.543014}}
-    pinColor = {"red"}
-    title = {"Tibiao Bakery, Inc.–Iloilo Main Branch"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.692491,
-    longitude: 122.541842}}
-    pinColor = {"red"}
-    title = {"Dino Coffe shop"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.694092,
-    longitude: 122.540663}}
-    pinColor = {"red"}
-    title = {"Esperanza’s"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.694671,
-    longitude: 122.540591}}
-    pinColor = {"red"}
-    title = {"Holy Rosary Academy"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.695474,
-    longitude: 122.540216}}
-    pinColor = {"red"}
-    title = {"JRC Glass Supply"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.696261,
-    longitude: 122.541706}}
-    pinColor = {"red"}
-    title = {"Iloilo Southprime Developers Inc"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.696948,
-    longitude: 122.543037}}
-    pinColor = {"red"}
-    title = {"Jollibee Iloilo Molo DT"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.696073,
-    longitude: 122.544317}}
-    pinColor = {"red"}
-    title = {"M Lhuillier"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.695240,
-    longitude: 122.545186}}
-    pinColor = {"red"}
-    title = {"St. Therese Chapels"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.695808,
-    longitude: 122.547613}}
-    pinColor = {"red"}
-    title = {"Mr Isada"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.696662,
-    longitude: 122.554456}}
-    pinColor = {"red"}
-    title = {"Iloilo Doctors' Hospital, Inc."}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.697329,
-    longitude: 122.560518}}
-    pinColor = {"red"}
-    title = {"88 Plaza Hotel"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.696843,
-    longitude: 122.561798}}
-    pinColor = {"red"}
-    title = {"University of San Agustin Gymnasium"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.694905,
-    longitude: 122.561794}}
-    pinColor = {"red"}
-    title = {"EON CENTENNIAL PLAZA HOTEL"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.694197,
-    longitude: 122.561873}}
-    pinColor = {"red"}
-    title = {"7-Eleven"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.694999,
-    longitude: 122.565113}}
-    pinColor = {"red"}
-    title = {"Go Hotels Iloilo"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.696563,
-    longitude: 122.568464}}
-    pinColor = {"red"}
-    title = {"Unitop"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.694861,
-    longitude: 122.569151}}
-    pinColor = {"red"}
-    title = {"China Bank - Iloilo-Mabini"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.692962,
-    longitude: 122.569147}}
-    pinColor = {"red"}
-    title = {"Iloilo Central Market"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.691986,
-    longitude: 122.569595}}
-    pinColor = {"red"}
-    title = {"Phinma University Of Iloilo"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.692040,
-    longitude: 122.571525}}
-    pinColor = {"red"}
-    title = {"UCKG ILOILO"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.692834,
-    longitude: 122.572555}}
-    pinColor = {"red"}
-    title = {"Shell"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.691902,
-    longitude: 122.573667}}
-    pinColor = {"red"}
-    title = {"Mercury Drugstore(Plaza Libertad)"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.691721,
-    longitude: 122.573485}}
-    pinColor = {"red"}
-    title = {"Pacifica Agrivet Suppies"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.691976,
-    longitude: 122.571793}}
-    pinColor = {"red"}
-    title = {"Rizal Street"}
-    />
-   </MapView> 
-  </View>
+  />
+
+  {moloTimawaMarkers.map((marker, index) => {
+             return (<MapView.Marker
+             coordinate = {{latitude: moloTimawaMarkers[index].latitude,
+             longitude: moloTimawaMarkers[index].longitude}}
+             pinColor = {"red"}
+             title = {moloTimawaMarkers[index].value}
+             /> 
+             )})
+  }
+
+  </MapView> 
+</View>
   
-export default moloTimawa

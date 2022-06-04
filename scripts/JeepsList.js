@@ -11,8 +11,7 @@ import {leganesLapaz, leganesLapazMarkers} from "./jeeps/leganes-lapaz"
 import {leganesSM, leganesSMMarkers} from "./jeeps/leganes-sm"
 import {mandurriaoSM, mandurriaoSMMarkers} from "./jeeps/mandurriao-sm"
 import {moloBaluarte, moloBaluarteMarkers} from "./jeeps/molo-baluarte"
-import moloBaluarte from "./jeeps/molo-baluarte"
-import moloTimawa from "./jeeps/molo-timawa"
+import {moloTimawa, moloTimawaMarkers} from "./jeeps/molo-timawa"
 import parolaSuper from "./jeeps/parola-super"
 import ungkaTanza from "./jeeps/ungka-tanza"
 import {villa, villaMarkers} from "./jeeps/villa"
@@ -50,9 +49,9 @@ const LeganesSM = new Jeep('Leganes SM', leganesSM, leganesSMMarkers)
 jeeps.push(LeganesSM)
 const MandurriaoSM = new Jeep('Mandurriao SM', mandurriaoSM, mandurriaoSMMarkers)
 jeeps.push(MandurriaoSM)
-const MoloBaluarte = new Jeep('Molo Baluarte', moloBaluarte)
+const MoloBaluarte = new Jeep('Molo Baluarte', moloBaluarte, moloBaluarteMarkers)
 jeeps.push(MoloBaluarte)
-const MoloTimawa = new Jeep('Molo Timawa', moloTimawa, moloBaluarteMarkers)
+const MoloTimawa = new Jeep('Molo Timawa', moloTimawa, moloTimawaMarkers)
 jeeps.push(MoloTimawa)
 const ParolaSuper = new Jeep('Parola Super', parolaSuper)
 jeeps.push(ParolaSuper)
