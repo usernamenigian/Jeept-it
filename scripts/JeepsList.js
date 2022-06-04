@@ -3,6 +3,11 @@ import {jaroCPU, jaroCPUMarkers} from "./jeeps/jaro-cpu"
 import {jaroCPUUngka, jaroCPUUngkaMarkers} from "./jeeps/jaro-cpu-ungka"
 import {jaroLikoNFA, jaroLikoNFAMarkers} from "./jeeps/jaro-liko-nfa"
 import {jaroLikoTagbak, jaroLikoTagbakMarkers} from "./jeeps/jaro-liko-tagbak"
+import bitoonJaroPlaza from "./jeeps/bitoon-jaro-plaza"
+import lapaz from "./jeeps/lapaz"
+import lapuz from "./jeeps/lapuz"
+import ungkaTanza from "./jeeps/ungka-tanza"
+import barrioObrero from "./jeeps/barrio-obrero"
 import leganesLapaz from "./jeeps/leganes-lapaz"
 import leganesSM from "./jeeps/leganes-sm"
 import mandurriaoSM from "./jeeps/mandurriao-sm"
@@ -44,5 +49,15 @@ const ParolaSuper = new Jeep('Parola Super', parolaSuper)
 jeeps.push(ParolaSuper)
 const Villa = new Jeep('Villa', villa, villaMarkers)
 jeeps.push(Villa)
+const BitoonJaroPlaza = new Jeep('Bitoon Jaro Plaza', bitoonJaroPlaza)
+jeeps.push(BitoonJaroPlaza)
+const Lapaz = new Jeep('Lapaz', lapaz)
+jeeps.push(Lapaz)
+const Lapuz = new Jeep('Lapuz', lapuz)
+jeeps.push(Lapuz)
+const UngkaTanza = new Jeep('Ungka Tanza', ungkaTanza)
+jeeps.push(UngkaTanza)
+const BarrioObrero = new Jeep('Barrio Obrero', barrioObrero)
+jeeps.push(BarrioObrero)
 
 export default jeeps
