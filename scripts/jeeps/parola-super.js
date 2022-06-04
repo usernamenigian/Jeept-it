@@ -1,10 +1,22 @@
 import React from 'react';
 import MapView, { Marker } from 'react-native-maps';
-import { StyleSheet, View } from 'react-native';
+import { View } from 'react-native';
 import MapViewDirections from 'react-native-maps-directions';
 import styles from '../screens/styles'
 
-const parolaSuper =
+export const parolaSuperMarkers = 
+[
+  {value: 'Ferry Terminal Parola', latitude: 10.692466, longitude: 122.583463},
+  {value: 'Iloilo Avenue Lumber', latitude: 10.695604, longitude: 122.579447},
+  {value: 'Landbank Plaza Libertad', latitude: 10.691990, longitude: 122.574091},
+  {value: 'Iloilo Convention Center', latitude: 10.714237, longitude: 122.545294},
+  {value: 'Iloilo Society Commercial', latitude: 10.692101, longitude: 122.572210},
+  {value: 'Phinma University Of Iloilo', latitude: 10.691999, longitude: 122.569612},
+  {value: 'Mang Inasal 1st Store', latitude: 10.693343, longitude: 122.565749},
+  {value: 'Super/Iloilo Terminal Market', latitude: 10.693130, longitude: 122.564485}
+]
+
+export const parolaSuper =
   <View style = {styles.container}>
    <MapView style = {styles.map} 
     initialRegion = {{
@@ -14,7 +26,8 @@ const parolaSuper =
      longitudeDelta: 0.045,
     }}
    >
-    <MapViewDirections
+
+  <MapViewDirections
     origin = {{latitude: 10.692679, longitude: 122.583174}}
     waypoints = {[{latitude: 10.692883, longitude: 122.582737},
                   {latitude: 10.695167, longitude: 122.580010},
@@ -31,57 +44,20 @@ const parolaSuper =
     strokeWidth = {4}
     strokeColor = "red"
     optimizeWaypoints={true}
-   />
-   <MapView.Marker
-    coordinate = {{latitude: 10.692466,
-    longitude: 122.583463}}
-    pinColor = {"red"}
-    title = {"Ferry Terminal Parola"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.695604,
-    longitude: 122.579447}}
-    pinColor = {"red"}
-    title = {"Iloilo Avenue Lumber"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.691990,
-    longitude: 122.574091}}
-    pinColor = {"red"}
-    title = {"Landbank Plaza Libertad"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.714237,
-    longitude: 122.545294}}
-    pinColor = {"red"}
-    title = {"Iloilo Convention Center"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.692101,
-    longitude: 122.572210}}
-    pinColor = {"red"}
-    title = {"Iloilo Society Commercial"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.691999,
-    longitude: 122.569612}}
-    pinColor = {"red"}
-    title = {"Phinma University Of Iloilo"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.693343,
-    longitude: 122.565749}}
-    pinColor = {"red"}
-    title = {"Mang Inasal 1st Store"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.693130,
-    longitude: 122.564485}}
-    pinColor = {"red"}
-    title = {"Super/Iloilo Terminal Market"}
-    />
-   </MapView> 
-  </View>
+  />
 
-export default parolaSuper
+  {parolaSuperMarkers.map((marker, index) => {
+             return (<MapView.Marker
+             coordinate = {{latitude: parolaSuperMarkers[index].latitude,
+             longitude: parolaSuperMarkers[index].longitude}}
+             pinColor = {"red"}
+             title = {parolaSuperMarkers[index].value}
+             /> 
+             )})
+  }
+
+  </MapView> 
+</View>
+
+
  
