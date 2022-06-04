@@ -5,19 +5,19 @@ import MapViewDirections from 'react-native-maps-directions';
 import styles from '../screens/styles'
 
 export const mandurriaoSMMarkers = 
-[{Value: 'marker1', latitude: 10.714279, longitude: 122.551497},
- {value: 'marker2', latitude: 10.719613, longitude: 122.551798},
- {value: 'marker3', latitude: 10.717273, longitude: 122.546454},
- {value: 'marker4', latitude: 10.714237, longitude: 122.545294},
- {value: 'marker5', latitude: 10.717163, longitude: 122.537069},
- {value: 'marker6', latitude: 10.718217, longitude: 122.541813},
- {value: 'marker7', latitude: 10.718196, longitude: 122.542693},
- {value: 'marker8', latitude: 10.712008, longitude: 122.551532},
- {value: 'marker9', latitude: 10.698694, longitude: 122.561837},
- {value: 'marker10', latitude: 10.694740, longitude: 122.561821},
- {value: 'marker11', latitude: 10.695194, longitude: 122.565343},
- {value: 'marker12', latitude: 10.696933, longitude: 122.567733},
- {value: 'marker13', latitude: 10.697903, longitude: 122.567249}
+[{Value: 'SM City', latitude: 10.714279, longitude: 122.551497},
+ {value: 'Jollibee Diversion Taft', latitude: 10.719613, longitude: 122.551798},
+ {value: 'Festive Walk', latitude: 10.717273, longitude: 122.546454},
+ {value: 'Iloilo Convention Center', latitude: 10.714237, longitude: 122.545294},
+ {value: 'Mandurriao Plaza', latitude: 10.717163, longitude: 122.537069},
+ {value: 'Western Visayas Medical Center', latitude: 10.718217, longitude: 122.541813},
+ {value: 'Mandurriao Supermart', latitude: 10.718196, longitude: 122.542693},
+ {value: 'Plazuela de Iloilo', latitude: 10.712008, longitude: 122.551532},
+ {value: 'University of San Agustin', latitude: 10.698694, longitude: 122.561837},
+ {value: 'Colegio de las Hijas de Jesus', latitude: 10.694740, longitude: 122.561821},
+ {value: 'Robinsons Ilolo', latitude: 10.695194, longitude: 122.565343},
+ {value: 'Marymart', latitude: 10.696933, longitude: 122.567733},
+ {value: 'SM Delgado', latitude: 10.697903, longitude: 122.567249}
 ]
 
 export const mandurriaoSM = 
@@ -63,85 +63,14 @@ export const mandurriaoSM =
     optimizeWaypoints={true}
    />
 
-   <MapView.Marker
-    coordinate = {{latitude: 10.714279,
-    longitude: 122.551497}}
-    pinColor = {"red"}
-    title = {"SM City"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.719613,
-    longitude: 122.551798}}
-    pinColor = {"red"}
-    title = {"Jollibee Diversion Taft"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.717273,
-    longitude: 122.546454}}
-    pinColor = {"red"}
-    title = {"Festive Walk"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.714237,
-    longitude: 122.545294}}
-    pinColor = {"red"}
-    title = {"Iloilo Convention Center"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.717163,
-    longitude: 122.537069}}
-    pinColor = {"red"}
-    title = {"Mandurriao Plaza"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.718217,
-    longitude: 122.541813}}
-    pinColor = {"red"}
-    title = {"Western Visayas Medical Center"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.718196,
-    longitude: 122.542693}}
-    pinColor = {"red"}
-    title = {"Mandurriao Supermart"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.712008,
-    longitude: 122.551532}}
-    pinColor = {"red"}
-    title = {"Plazuela de Iloilo"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.698694,
-    longitude: 122.561837}}
-    pinColor = {"red"}
-    title = {"University of San Agustin"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.694740,
-    longitude: 122.561821}}
-    pinColor = {"red"}
-    title = {"Colegio de las Hijas de Jesus"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.695194,
-    longitude: 122.565343}}
-    pinColor = {"red"}
-    title = {"Robinsons Ilolo"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.696933,
-    longitude: 122.567733}}
-    pinColor = {"red"}
-    title = {"Marymart"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.697903,
-    longitude: 122.567249}}
-    pinColor = {"red"}
-    title = {"SM Delgado"}
-    />
+   {mandurriaoSMMarkers.map((marker, index) => {
+    return (<MapView.Marker
+     coordinate = {{latitude: mandurriaoSMMarkers[index].latitude,
+     longitude: mandurriaoSMMarkers[index].longitude}}
+     pinColor = {"red"}
+     title = {mandurriaoSMMarkers[index].value}
+    /> 
+    )})
+   }
    </MapView> 
   </View>
-
-export default mandurriaoSM;

@@ -6,15 +6,15 @@ import MapViewDirections from 'react-native-maps-directions';
 import styles from '../screens/styles'
 
 export const calaparanVillaMarkers = 
-[{value: 'marker1', latitude: 10.692331, longitude: 122.573544}, 
- {value: 'marker2', latitude: 10.691782, longitude: 122.569529},
- {value: 'marker3', latitude: 10.696526, longitude: 122.568670},
- {value: 'marker4', latitude: 10.695514, longitude: 122.566815},
- {value: 'marker5', latitude: 10.694987, longitude: 122.565204},
- {value: 'marker6', latitude: 10.694797, longitude: 122.562891},
- {value: 'marker7', latitude: 10.693174, longitude: 122.559348},
- {value: 'marker8', latitude: 10.692837, longitude: 122.555848},
- {value: 'marker9', latitude: 10.679911, longitude: 122.517421}
+[{value: 'Plaza Libertad', latitude: 10.692331, longitude: 122.573544}, 
+ {value: 'PHINMA University Iloilo', latitude: 10.691782, longitude: 122.569529},
+ {value: 'UNITOP', latitude: 10.696526, longitude: 122.568670},
+ {value: '1688 MALL', latitude: 10.695514, longitude: 122.566815},
+ {value: 'Robinsons Iloilo', latitude: 10.694987, longitude: 122.565204},
+ {value: 'Colegio de las Hijas de Jesus', latitude: 10.694797, longitude: 122.562891},
+ {value: 'Tanza Church', latitude: 10.693174, longitude: 122.559348},
+ {value: 'Robinsons Builders', latitude: 10.692837, longitude: 122.555848},
+ {value: 'Breakthrough', latitude: 10.679911, longitude: 122.517421}
 ]
 
 export const calaparanVilla =
@@ -55,59 +55,14 @@ export const calaparanVilla =
     optimizeWaypoints={true}
    />
 
-   <MapView.Marker
-    coordinate = {{latitude: 10.692331,
-    longitude: 122.573544}}
-    pinColor = {"red"}
-    title = {"Plaza Libertad"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.691782,
-    longitude: 122.569529}}
-    pinColor = {"red"}
-    title = {"PHINMA University Iloilo"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.696526,
-    longitude: 122.568670}}
-    pinColor = {"red"}
-    title = {"UNITOP"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.695514,
-    longitude: 122.566815}}
-    pinColor = {"red"}
-    title = {"1688 MALL"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.694987,
-    longitude: 122.565204}}
-    pinColor = {"red"}
-    title = {"Robinsons Iloilo"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.694797,
-    longitude: 122.562891}}
-    pinColor = {"red"}
-    title = {"Colegio de las Hijas de Jesus"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.693174,
-    longitude: 122.559348}}
-    pinColor = {"red"}
-    title = {"Tanza Church"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.692837,
-    longitude: 122.555848}}
-    pinColor = {"red"}
-    title = {"Robinsons Builders"}
-    />
-   <MapView.Marker
-    coordinate = {{latitude: 10.679911,
-    longitude: 122.517421}}
-    pinColor = {"red"}
-    title = {"Breakthrough"}
-    />
+   {calaparanVillaMarkers.map((marker, index) => {
+    return (<MapView.Marker
+     coordinate = {{latitude: calaparanVillaMarkers[index].latitude,
+     longitude: calaparanVillaMarkers[index].longitude}}
+     pinColor = {"red"}
+     title = {calaparanVillaMarkers[index].value}
+    /> 
+    )})
+   }
    </MapView> 
   </View>
