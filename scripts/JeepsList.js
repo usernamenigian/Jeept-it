@@ -1,19 +1,19 @@
+import barrioObrero from "./jeeps/barrio-obrero"
+import bitoonJaroPlaza from "./jeeps/bitoon-jaro-plaza"
 import {calaparanVilla, calaparanVillaMarkers} from "./jeeps/calaparan-villa-beach"
 import {jaroCPU, jaroCPUMarkers} from "./jeeps/jaro-cpu"
 import {jaroCPUUngka, jaroCPUUngkaMarkers} from "./jeeps/jaro-cpu-ungka"
 import {jaroLikoNFA, jaroLikoNFAMarkers} from "./jeeps/jaro-liko-nfa"
 import {jaroLikoTagbak, jaroLikoTagbakMarkers} from "./jeeps/jaro-liko-tagbak"
-import bitoonJaroPlaza from "./jeeps/bitoon-jaro-plaza"
 import lapaz from "./jeeps/lapaz"
 import lapuz from "./jeeps/lapuz"
-import ungkaTanza from "./jeeps/ungka-tanza"
-import barrioObrero from "./jeeps/barrio-obrero"
 import leganesLapaz from "./jeeps/leganes-lapaz"
 import leganesSM from "./jeeps/leganes-sm"
 import mandurriaoSM from "./jeeps/mandurriao-sm"
 import moloBaluarte from "./jeeps/molo-baluarte"
 import moloTimawa from "./jeeps/molo-timawa"
 import parolaSuper from "./jeeps/parola-super"
+import ungkaTanza from "./jeeps/ungka-tanza"
 import villa, { villaMarkers } from "./jeeps/villa"
 
 class Jeep {
@@ -25,6 +25,10 @@ class Jeep {
 }
 
 const jeeps = []
+const BarrioObrero = new Jeep('Barrio Obrero', barrioObrero)
+jeeps.push(BarrioObrero)
+const BitoonJaroPlaza = new Jeep('Bitoon Jaro Plaza', bitoonJaroPlaza)
+jeeps.push(BitoonJaroPlaza)
 const CalaparanVilla = new Jeep('Calaparan Villa', calaparanVilla, calaparanVillaMarkers)
 jeeps.push(CalaparanVilla)
 const JaroCPU = new Jeep('Jaro CPU', jaroCPU, jaroCPUMarkers)
@@ -35,6 +39,10 @@ const JaroLikoNFA = new Jeep('Jaro Liko NFA', jaroLikoNFA, jaroLikoNFAMarkers)
 jeeps.push(JaroLikoNFA)
 const JaroLikoTagbak = new Jeep('Jaro Liko Tagbak', jaroLikoTagbak, jaroLikoTagbakMarkers)
 jeeps.push(JaroLikoTagbak)
+const Lapaz = new Jeep('Lapaz', lapaz)
+jeeps.push(Lapaz)
+const Lapuz = new Jeep('Lapuz', lapuz)
+jeeps.push(Lapuz)
 const LeganesLapaz = new Jeep('Leganes Lapaz', leganesLapaz)
 jeeps.push(LeganesLapaz)
 const LeganesSM = new Jeep('Leganes SM', leganesSM)
@@ -47,17 +55,11 @@ const MoloTimawa = new Jeep('Molo Timawa', moloTimawa)
 jeeps.push(MoloTimawa)
 const ParolaSuper = new Jeep('Parola Super', parolaSuper)
 jeeps.push(ParolaSuper)
-const Villa = new Jeep('Villa', villa, villaMarkers)
-jeeps.push(Villa)
-const BitoonJaroPlaza = new Jeep('Bitoon Jaro Plaza', bitoonJaroPlaza)
-jeeps.push(BitoonJaroPlaza)
-const Lapaz = new Jeep('Lapaz', lapaz)
-jeeps.push(Lapaz)
-const Lapuz = new Jeep('Lapuz', lapuz)
-jeeps.push(Lapuz)
 const UngkaTanza = new Jeep('Ungka Tanza', ungkaTanza)
 jeeps.push(UngkaTanza)
-const BarrioObrero = new Jeep('Barrio Obrero', barrioObrero)
-jeeps.push(BarrioObrero)
+const Villa = new Jeep('Villa', villa, villaMarkers)
+jeeps.push(Villa)
+
+
 
 export default jeeps
