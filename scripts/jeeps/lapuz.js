@@ -1,10 +1,31 @@
+import React from 'react';
 import MapView, { Marker } from 'react-native-maps';
 import { View } from 'react-native';
-import React from 'react';
 import MapViewDirections from 'react-native-maps-directions';
 import styles from '../screens/styles'
 
-const lapuz = 
+export const lapuzMarkers = 
+[
+  {value: 'Lapuz loading area', latitude: 10.701391, longitude: 122.567687},
+  {value: 'Philippine National Bank', latitude: 10.700997, longitude: 122.567439},
+  {value: 'Cabalum Western College', latitude: 10.701157, longitude: 122.568511},
+  {value: 'LBC', latitude: 10.699568, longitude: 122.569189},
+  {value: 'Land Bank', latitude: 10.689913, longitude: 122.568876},
+  {value: 'China Bank Savings', latitude: 10.698793, longitude: 122.569194},
+  {value: 'Shopwise', latitude: 10.698145, longitude: 122.568733},
+  {value: 'Chowking', latitude: 10.697201, longitude: 122.569268},
+  {value: 'Citi Appliance', latitude: 10.695142, longitude: 122.571019},
+  {value: 'Jollibee', latitude: 10.693298, longitude: 122.57174},
+  {value: '7-Eleven', latitude: 10.692948, longitude: 122.572281},
+  {value: 'Plaza Libertad', latitude: 10.692632, longitude: 122.573688},
+  {value: 'National Bureau of Investigation', latitude: 10.688953, longitude: 122.578608},
+  {value: 'Iloilo City Porta', latitude: 10.690623, longitude: 122.582806},
+  {value: 'Guimaras-Iloilo Ferry Terminal', latitude: 10.692458, longitude: 122.583144},
+  {value: 'Iloilo City Fire Station', latitude: 10.694048, longitude: 122.572684},
+  {value: 'Iloilo City Fire Station', latitude: 10.700403, longitude: 122.570084}
+]
+
+export const lapuz = 
 <View style = {styles.mapContainer}>
 <MapView style = {styles.map}
 initialRegion = {{
@@ -37,109 +58,16 @@ initialRegion = {{
     optimizeWaypoints={true}
    />
 
-<MapView.Marker
-coordinate = {{latitude: 10.701391,
-    longitude: 122.567687}}
-    pinColor = {"red"}
-    title = {"Lapuz loading area"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.700997,
-    longitude: 122.567439}}
-    pinColor = {"red"}
-    title = {"Philippine National Bank"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.701157,
-    longitude: 122.568511}}
-    pinColor = {"red"}
-    title = {"Cabalum Western College"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.699568,
-    longitude: 122.569189}}
-    pinColor = {"red"}
-    title = {"LBC"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.689913,
-    longitude: 122.568876}}
-    pinColor = {"red"}
-    title = {"Land Bank"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.698793,
-    longitude: 122.569194}}
-    pinColor = {"red"}
-    title = {"China Bank Savings"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.698145,
-    longitude: 122.568733}}
-    pinColor = {"red"}
-    title = {"Shopwise"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.697201,
-    longitude: 122.569268}}
-    pinColor = {"red"}
-    title = {"Chowking"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.695142,
-    longitude: 122.571019}}
-    pinColor = {"red"}
-    title = {"Citi Appliance"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.693298,
-    longitude: 122.57174}}
-    pinColor = {"red"}
-    title = {"Jollibee"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.692948,
-    longitude: 122.572281}}
-    pinColor = {"red"}
-    title = {"7-Eleven"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.692632,
-    longitude: 122.573688}}
-    pinColor = {"red"}
-    title = {"Plaza Libertad"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.688953,
-    longitude: 122.578608}}
-    pinColor = {"red"}
-    title = {"National Bureau of Investigation"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.690623,
-    longitude: 122.582806}}
-    pinColor = {"red"}
-    title = {"Iloilo City Port"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.692458,
-    longitude: 122.583146}}
-    pinColor = {"red"}
-    title = {"Guimaras-Iloilo Ferry Terminal"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.694048,
-    longitude: 122.572684}}
-    pinColor = {"red"}
-    title = {"Iloilo City Fire Station"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.700403,
-    longitude: 122.570084}}
-    pinColor = {"red"}
-    title = {"Iloilo City Fire Station"}
-/>
+  {lapuzMarkers.map((marker, index) => {
+             return (<MapView.Marker
+             coordinate = {{latitude: lapuzMarkers[index].latitude,
+             longitude: lapuzMarkers[index].longitude}}
+             pinColor = {"red"}
+             title = {lapuzMarkers[index].value}
+             /> 
+             )})
+  }
+
 </MapView>
 </View>
 
-export default lapuz
