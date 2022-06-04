@@ -6,9 +6,15 @@ import MapViewDirections from 'react-native-maps-directions';
 import styles from '../screens/styles'
 
 export const calaparanVillaMarkers = 
-[{value: 'marker1', latitude: 10.691797, longitude: 122.573818}, 
-{value: 'marker2', latitude: 10.692967, longitude: 122.572557}
-
+[{value: 'marker1', latitude: 10.692331, longitude: 122.573544}, 
+ {value: 'marker2', latitude: 10.691782, longitude: 122.569529},
+ {value: 'marker3', latitude: 10.696526, longitude: 122.568670},
+ {value: 'marker4', latitude: 10.695514, longitude: 122.566815},
+ {value: 'marker5', latitude: 10.694987, longitude: 122.565204},
+ {value: 'marker6', latitude: 10.694797, longitude: 122.562891},
+ {value: 'marker7', latitude: 10.693174, longitude: 122.559348},
+ {value: 'marker8', latitude: 10.692837, longitude: 122.555848},
+ {value: 'marker9', latitude: 10.679911, longitude: 122.517421}
 ]
 
 export const calaparanVilla =

@@ -4,7 +4,23 @@ import React from 'react';
 import MapViewDirections from 'react-native-maps-directions';
 import styles from '../screens/styles'
 
-const mandurriaoSM = 
+export const mandurriaoSMMarkers = 
+[{Value: 'marker1', latitude: 10.714279, longitude: 122.551497},
+ {value: 'marker2', latitude: 10.719613, longitude: 122.551798},
+ {value: 'marker3', latitude: 10.717273, longitude: 122.546454},
+ {value: 'marker4', latitude: 10.714237, longitude: 122.545294},
+ {value: 'marker5', latitude: 10.717163, longitude: 122.537069},
+ {value: 'marker6', latitude: 10.718217, longitude: 122.541813},
+ {value: 'marker7', latitude: 10.718196, longitude: 122.542693},
+ {value: 'marker8', latitude: 10.712008, longitude: 122.551532},
+ {value: 'marker9', latitude: 10.698694, longitude: 122.561837},
+ {value: 'marker10', latitude: 10.694740, longitude: 122.561821},
+ {value: 'marker11', latitude: 10.695194, longitude: 122.565343},
+ {value: 'marker12', latitude: 10.696933, longitude: 122.567733},
+ {value: 'marker13', latitude: 10.697903, longitude: 122.567249}
+]
+
+export const mandurriaoSM = 
 <View style = {styles.container}>
    <MapView style = {styles.map} 
     initialRegion = {{

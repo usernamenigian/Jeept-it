@@ -8,13 +8,13 @@ import {jaroLikoTagbak, jaroLikoTagbakMarkers} from "./jeeps/jaro-liko-tagbak"
 import lapaz from "./jeeps/lapaz"
 import lapuz from "./jeeps/lapuz"
 import leganesLapaz from "./jeeps/leganes-lapaz"
-import leganesSM from "./jeeps/leganes-sm"
-import mandurriaoSM from "./jeeps/mandurriao-sm"
+import {leganesSM, leganesSMMarkers} from "./jeeps/leganes-sm"
+import {mandurriaoSM, mandurriaoSMMarkers} from "./jeeps/mandurriao-sm"
 import moloBaluarte from "./jeeps/molo-baluarte"
 import moloTimawa from "./jeeps/molo-timawa"
 import parolaSuper from "./jeeps/parola-super"
 import ungkaTanza from "./jeeps/ungka-tanza"
-import villa, { villaMarkers } from "./jeeps/villa"
+import {villa, villaMarkers} from "./jeeps/villa"
 
 class Jeep {
     constructor(name, map, markers) {
@@ -45,9 +45,9 @@ const Lapuz = new Jeep('Lapuz', lapuz)
 jeeps.push(Lapuz)
 const LeganesLapaz = new Jeep('Leganes Lapaz', leganesLapaz)
 jeeps.push(LeganesLapaz)
-const LeganesSM = new Jeep('Leganes SM', leganesSM)
+const LeganesSM = new Jeep('Leganes SM', leganesSM, leganesSMMarkers)
 jeeps.push(LeganesSM)
-const MandurriaoSM = new Jeep('Mandurriao SM', mandurriaoSM)
+const MandurriaoSM = new Jeep('Mandurriao SM', mandurriaoSM, mandurriaoSMMarkers)
 jeeps.push(MandurriaoSM)
 const MoloBaluarte = new Jeep('Molo Baluarte', moloBaluarte)
 jeeps.push(MoloBaluarte)
