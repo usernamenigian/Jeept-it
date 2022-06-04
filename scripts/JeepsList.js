@@ -13,7 +13,7 @@ import {mandurriaoSM, mandurriaoSMMarkers} from "./jeeps/mandurriao-sm"
 import {moloBaluarte, moloBaluarteMarkers} from "./jeeps/molo-baluarte"
 import {moloTimawa, moloTimawaMarkers} from "./jeeps/molo-timawa"
 import {parolaSuper, parolaSuperMarkers} from "./jeeps/parola-super"
-import ungkaTanza from "./jeeps/ungka-tanza"
+import {ungkaTanza, ungkaTanzaMarkers} from "./jeeps/ungka-tanza"
 import {villa, villaMarkers} from "./jeeps/villa"
 
 class Jeep {
@@ -55,7 +55,7 @@ const MoloTimawa = new Jeep('Molo Timawa', moloTimawa, moloTimawaMarkers)
 jeeps.push(MoloTimawa)
 const ParolaSuper = new Jeep('Parola Super', parolaSuper, parolaSuperMarkers)
 jeeps.push(ParolaSuper)
-const UngkaTanza = new Jeep('Ungka Tanza', ungkaTanza)
+const UngkaTanza = new Jeep('Ungka Tanza', ungkaTanza, ungkaTanzaMarkers)
 jeeps.push(UngkaTanza)
 const Villa = new Jeep('Villa', villa, villaMarkers)
 jeeps.push(Villa)
