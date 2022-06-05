@@ -4,6 +4,15 @@ import React from 'react';
 import MapViewDirections from 'react-native-maps-directions';
 import styles from '../screens/styles'
 
+export const ManduriaoMoloMarkers = [
+    {value: 'Ana Ros Village',  latitude: 10.725809, longitude: 122.528350},
+    {value: 'Manduriao Plaza',  latitude: 10.717873, longitude: 122.537422},
+    {value: 'Esplanade Uno',  latitude: 10.700778, longitude: 122.542669},
+    {value: 'Iloilo Supermart - Molo',  latitude: 10.718063, longitude: 122.541748},
+    {value: 'Molo Plaza',  latitude: 10.696873, longitude: 122.544026},
+    {value: 'GT Plaza Mall Molo',  latitude: 10.696514, longitude: 122.545271},
+    ]
+
 const manduriaoMolo = 
 <View style = {styles.container}>
 <MapView style = {styles.map}
@@ -40,42 +49,16 @@ initialRegion = {{
     strokeColor = "red"
     optimizeWaypoints={true}
    />
-<MapView.Marker
-coordinate = {{latitude: 10.725809,
-    longitude: 122.528350}}
-    pinColor = {"red"}
-    title = {"Ana Ros Village"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.716574,
-    longitude: 122.536770}}
-    pinColor = {"red"}
-    title = {"Manduriao Plaza"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.700778,
-    longitude: 122.542669}}
-    pinColor = {"red"}
-    title = {"Esplanade Uno"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.718063,
-    longitude: 122.541748}}
-    pinColor = {"red"}
-    title = {"Iloilo Supermart - Molo"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.696873,
-    longitude: 122.544026}}
-    pinColor = {"red"}
-    title = {"Molo Plaza"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.696514,
-    longitude: 122.545271}}
-    pinColor = {"red"}
-    title = {"GT Plaza Mall Molo"}
-/>
+
+   {ManduriaoMoloMarkers.map((marker, index) => {
+             return (<MapView.Marker
+             coordinate = {{latitude: ManduriaoMoloMarkers[index].latitude,
+             longitude: ManduriaoMoloMarkers[index].longitude}}
+             pinColor = {"red"}
+             title = {ManduriaoMoloMarkers[index].value}
+             /> 
+             )})
+  }
 </MapView>
 </View>
 
