@@ -2,8 +2,8 @@ import MapView, { Marker } from 'react-native-maps';
 import { View } from 'react-native';
 import React from 'react';
 import MapViewDirections from 'react-native-maps-directions';
-
 import styles from '../screens/styles'
+
 export const JaroPlazaManduriaoMarkers = [
     {value: 'Carlos Bakeshop',  latitude: 10.725028, longitude: 122.549731},
     {value: 'Jolibee Festive',  latitude: 10.718549, longitude: 122.546994},
