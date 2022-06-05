@@ -4,6 +4,18 @@ import { View } from 'react-native';
 import MapViewDirections from 'react-native-maps-directions';
 import styles from '../screens/styles'
 
+export const otonAnhawanMarkers = [
+    {value: 'Small Ville',  latitude: 10.705882, longitude: 122.552442},
+    {value: 'Esplanade',  latitude: 10.703346, longitude: 122.553135},
+    {value: `Maxx's Stoplight`,  latitude: 10.717873, longitude: 122.537422},
+    {value: 'Molo Terminal',  latitude: 10.698880, longitude: 122.547189},
+    {value: 'Shell Molo',  latitude:  10.697205, longitude: 122.542973},
+    {value: 'Villa Arevalo District Plaza',  latitude: 10.688931, longitude: 122.516236},
+    {value: 'Mohon Terminal',  latitude: 10.693370, longitude: 122.499812},
+    {value: 'Oton Plaza',  latitude: 10.692254, longitude: 122.478324},
+    ]
+    
+
 const otonAnhawan = 
 <View style = {styles.container}>
 <MapView style = {styles.map}
@@ -45,55 +57,16 @@ initialRegion = {{
     strokeColor = "red"
     optimizeWaypoints={true}
    />
-
-<MapView.Marker
-coordinate = {{latitude: 10.705882,
-    longitude: 122.552442}}
-    pinColor = {"red"}
-    title = {"Small Ville"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.703346,
-    longitude: 122.553135}}
-    pinColor = {"red"}
-    title = {"Esplanade"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.699881,
-    longitude: 122.553949}}
-    pinColor = {"red"}
-    title = {"Maxx's Stoplight"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.698880,
-    longitude: 122.547189}}
-    pinColor = {"red"}
-    title = {"Molo Terminal"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.697205,
-    longitude: 122.542973}}
-    pinColor = {"red"}
-    title = {"Shell Molo"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.688931,
-    longitude: 122.516236}}
-    pinColor = {"red"}
-    title = {"Villa Arevalo District Plaza"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.693370,
-    longitude: 122.499812}}
-    pinColor = {"red"}
-    title = {"Mohon Terminal"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.692254,
-    longitude: 122.478324}}
-    pinColor = {"red"}
-    title = {"Oton Plaza"}
-/>
+   
+   {otonAnhawanMarkers.map((marker, index) => {
+             return (<MapView.Marker
+             coordinate = {{latitude: otonAnhawanMarkers[index].latitude,
+             longitude: otonAnhawanMarkers[index].longitude}}
+             pinColor = {"red"}
+             title = {otonAnhawanMarkers[index].value}
+             /> 
+             )})
+  }
 </MapView>
 </View>
 
