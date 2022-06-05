@@ -1,61 +1,48 @@
-import React from 'react';
 import MapView, { Marker } from 'react-native-maps';
 import { View } from 'react-native';
+import React from 'react';
 import MapViewDirections from 'react-native-maps-directions';
 import styles from '../screens/styles'
 
+export const staBarbaraHiWayMarkers = [
+    {value: 'Aganan',  latitude: 10.769423, longitude: 122.536407},
+    {value: 'GT Town Center Pavia',  latitude: 10.753946, longitude: 122.537994},
+    {value: `Ungka Terminal`,  latitude: 10.746239, longitude: 10.746239},
+    {value: 'Carlos Bakeshop',  latitude: 10.725028, longitude: 122.549731},
+    {value: 'Jolibee Diversion Taft',  latitude:  10.719780, longitude: 122.551934},
+    {value: 'SM City Iloilo',  latitude: 10.714232, longitude: 122.551146},
+    {value: 'San Rafael',  latitude: 10.708838, longitude: 122.551744},
+    {value: 'Oton Plaza',  latitude: 10.692254, longitude: 122.478324},
+    {value: `Maxx's Stoplight`,  latitude: 10.717873, longitude: 122.537422},
+    ]
+
 const staBarbaraHiWay = 
-<View style = {styles.container}>
+<View style = {styles.mapContainer}>
 <MapView style = {styles.map}
 initialRegion = {{
-    latitude: 10.722304,
-    longitude: 122.554899,
+    latitude: 10.822037,
+    longitude: 122.529196,
     latitudeDelta: 0.1,
     longitudeDelta: 0.045,
    }}>
+<MapViewDirections
+    origin = {{latitude: 10.822037, longitude: 122.529196}}
+    destination = {{latitude: 10.717873, longitude: 122.537422}}
+    apikey = {'AIzaSyDz4sKzFahw8gq6f045fSJ6_xTiIhX2x78'}
+    strokeWidth = {4}
+    strokeColor = "red"
+    optimizeWaypoints={true}
+   />
 
-<MapView.Marker
-coordinate = {{latitude: 10.725028,
-    longitude: 122.549731}}
-    pinColor = {"red"}
-    title = {"Carlos Bakeshop"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.718549,
-    longitude: 122.546994}}
-    pinColor = {"red"}
-    title = {"Jolibee Festive"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.718177,
-    longitude: 122.542674}}
-    pinColor = {"red"}
-    title = {"Iloilo Supermart - Manduriao"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.718063,
-    longitude: 122.541748}}
-    pinColor = {"red"}
-    title = {"West Visayas Medical Center"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.717873,
-    longitude: 122.537422}}
-    pinColor = {"red"}
-    title = {"Manduriao Plaza"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.725809,
-    longitude: 122.528350}}
-    pinColor = {"red"}
-    title = {"Ana Ros Village"}
-/>
-<MapView.Marker
-coordinate = {{latitude: 10.740320,
-    longitude: 122.517204}}
-    pinColor = {"red"}
-    title = {"Hibao-an Terminal"}
-/>
+   {staBarbaraHiWayMarkers.map((marker, index) => {
+            return (<MapView.Marker
+            coordinate = {{latitude: staBarbaraHiWayMarkers[index].latitude,
+            longitude: staBarbaraHiWayMarkers[index].longitude}}
+            pinColor = {"red"}
+            title = {staBarbaraHiWayMarkers[index].value}
+            /> 
+            )})
+ }
 </MapView>
 </View>
 
