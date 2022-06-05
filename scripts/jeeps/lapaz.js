@@ -24,7 +24,7 @@ export const lapazMarkers =
 ]
 
 export const lapaz = 
-<View style = {styles.mapContainer}>
+<View style = {styles.container}>
 <MapView style = {styles.map}
 initialRegion = {{
     latitude: 10.706722,

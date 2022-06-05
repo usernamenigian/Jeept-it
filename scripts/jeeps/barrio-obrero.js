@@ -16,7 +16,7 @@ export const barrioObreroMarkers =
 ]
 
 export const barrioObrero = 
-  <View style = {styles.mapContainer}>
+  <View style = {styles.container}>
    <MapView style = {styles.map}
     initialRegion = {{
      latitude: 10.701086,

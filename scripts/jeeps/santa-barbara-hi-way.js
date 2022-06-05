@@ -5,7 +5,7 @@ import MapViewDirections from 'react-native-maps-directions';
 import styles from '../screens/styles'
 
 const staBarbaraHiWay = 
-<View style = {styles.mapContainer}>
+<View style = {styles.container}>
 <MapView style = {styles.map}
 initialRegion = {{
     latitude: 10.722304,
