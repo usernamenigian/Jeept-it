@@ -14,7 +14,7 @@ export const JaroPlazaManduriaoMarkers = [
     {value: 'Hibao-an Terminal',  latitude: 10.740320, longitude: 122.517204},
     ]
 export const jaroPlazaManduriao = 
-<View style = {styles.mapContainer}>
+<View style = {styles.container}>
 <MapView style = {styles.map}
 initialRegion = {{
     latitude: 10.722304,
