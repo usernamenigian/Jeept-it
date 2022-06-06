@@ -4,7 +4,8 @@ import { View } from 'react-native';
 import MapViewDirections from 'react-native-maps-directions';
 import styles from '../screens/styles'
 
-export const otonAnhawanMarkers = [
+export const otonAnhawanMarkers = 
+    [
     {value: 'Small Ville',  latitude: 10.705882, longitude: 122.552442},
     {value: 'Esplanade',  latitude: 10.703346, longitude: 122.553135},
     {value: `Maxx's Stoplight`,  latitude: 10.717873, longitude: 122.537422},
@@ -16,7 +17,7 @@ export const otonAnhawanMarkers = [
     ]
     
 
-const otonAnhawan = 
+export const otonAnhawan = 
 <View style = {styles.container}>
 <MapView style = {styles.map}
 initialRegion = {{
@@ -67,7 +68,7 @@ initialRegion = {{
              /> 
              )})
   }
+
 </MapView>
 </View>
 
-export default otonAnhawan

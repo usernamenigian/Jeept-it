@@ -4,7 +4,8 @@ import { View } from 'react-native';
 import MapViewDirections from 'react-native-maps-directions';
 import styles from '../screens/styles'
 
-export const otonDerechoMarkers = [
+export const otonDerechoMarkers = 
+    [
     {value: 'Small Ville',  latitude: 10.705882, longitude: 122.552442},
     {value: 'Esplanade',  latitude: 10.703346, longitude: 122.553135},
     {value: `Maxx's Stoplight`,  latitude: 10.717873, longitude: 122.537422},
@@ -15,7 +16,7 @@ export const otonDerechoMarkers = [
     {value: 'Oton Plaza',  latitude: 10.692254, longitude: 122.478324},
     ]
 
-const otonDerecho = 
+export const otonDerecho = 
 <View style = {styles.container}>
 <MapView style = {styles.map}
 initialRegion = {{
@@ -56,6 +57,7 @@ initialRegion = {{
     strokeColor = "red"
     optimizeWaypoints={true}
    />
+
     {otonDerechoMarkers.map((marker, index) => {
              return (<MapView.Marker
              coordinate = {{latitude: otonDerechoMarkers[index].latitude,
@@ -65,7 +67,7 @@ initialRegion = {{
              /> 
              )})
   }
+
 </MapView>
 </View>
 
-export default otonDerecho
