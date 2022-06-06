@@ -1,10 +1,11 @@
+import React from 'react';
 import MapView, { Marker } from 'react-native-maps';
 import { View } from 'react-native';
-import React from 'react';
 import MapViewDirections from 'react-native-maps-directions';
 import styles from '../screens/styles'
 
-export const staBarbaraHiWayMarkers = [
+export const staBarbaraHiWayMarkers = 
+    [
     {value: 'Aganan',  latitude: 10.769423, longitude: 122.536407},
     {value: 'GT Town Center Pavia',  latitude: 10.753946, longitude: 122.537994},
     {value: `Ungka Terminal`,  latitude: 10.746239, longitude: 10.746239},
@@ -15,8 +16,8 @@ export const staBarbaraHiWayMarkers = [
     {value: `Maxx's Stoplight`,  latitude: 10.717873, longitude: 122.537422},
     ]
 
-const staBarbaraHiWay = 
-<View style = {styles.mapContainer}>
+export const staBarbaraHiWay = 
+<View style = {styles.container}>
 <MapView style = {styles.map}
 initialRegion = {{
     latitude: 10.822037,
@@ -24,6 +25,7 @@ initialRegion = {{
     latitudeDelta: 0.1,
     longitudeDelta: 0.045,
    }}>
+
 <MapViewDirections
     origin = {{latitude: 10.822037, longitude: 122.529196}}
     destination = {{latitude: 10.717873, longitude: 122.537422}}
@@ -42,7 +44,6 @@ initialRegion = {{
             /> 
             )})
  }
+
 </MapView>
 </View>
-
-export default staBarbaraHiWay

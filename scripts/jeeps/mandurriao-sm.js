@@ -1,24 +1,25 @@
+import React from 'react';
 import MapView, { Marker } from 'react-native-maps';
 import { View } from 'react-native';
-import React from 'react';
 import MapViewDirections from 'react-native-maps-directions';
 import styles from '../screens/styles'
 
 export const mandurriaoSMMarkers = 
-[{Value: 'SM City', latitude: 10.714279, longitude: 122.551497},
- {value: 'Jollibee Diversion Taft', latitude: 10.719613, longitude: 122.551798},
- {value: 'Festive Walk', latitude: 10.717273, longitude: 122.546454},
- {value: 'Iloilo Convention Center', latitude: 10.714237, longitude: 122.545294},
- {value: 'Mandurriao Plaza', latitude: 10.717163, longitude: 122.537069},
- {value: 'Western Visayas Medical Center', latitude: 10.718217, longitude: 122.541813},
- {value: 'Mandurriao Supermart', latitude: 10.718196, longitude: 122.542693},
- {value: 'Plazuela de Iloilo', latitude: 10.712008, longitude: 122.551532},
- {value: 'University of San Agustin', latitude: 10.698694, longitude: 122.561837},
- {value: 'Colegio de las Hijas de Jesus', latitude: 10.694740, longitude: 122.561821},
- {value: 'Robinsons Ilolo', latitude: 10.695194, longitude: 122.565343},
- {value: 'Marymart', latitude: 10.696933, longitude: 122.567733},
- {value: 'SM Delgado', latitude: 10.697903, longitude: 122.567249}
-]
+   [
+   {Value: 'SM City', latitude: 10.714279, longitude: 122.551497},
+   {value: 'Jollibee Diversion Taft', latitude: 10.719613, longitude: 122.551798},
+   {value: 'Festive Walk', latitude: 10.717273, longitude: 122.546454},
+   {value: 'Iloilo Convention Center', latitude: 10.714237, longitude: 122.545294},
+   {value: 'Mandurriao Plaza', latitude: 10.717163, longitude: 122.537069},
+   {value: 'Western Visayas Medical Center', latitude: 10.718217, longitude: 122.541813},
+   {value: 'Mandurriao Supermart', latitude: 10.718196, longitude: 122.542693},
+   {value: 'Plazuela de Iloilo', latitude: 10.712008, longitude: 122.551532},
+   {value: 'University of San Agustin', latitude: 10.698694, longitude: 122.561837},
+   {value: 'Colegio de las Hijas de Jesus', latitude: 10.694740, longitude: 122.561821},
+   {value: 'Robinsons Ilolo', latitude: 10.695194, longitude: 122.565343},
+   {value: 'Marymart', latitude: 10.696933, longitude: 122.567733},
+   {value: 'SM Delgado', latitude: 10.697903, longitude: 122.567249}
+   ]
 
 export const mandurriaoSM = 
 <View style = {styles.container}>
@@ -72,5 +73,6 @@ export const mandurriaoSM =
     /> 
     )})
    }
+
    </MapView> 
   </View>
