@@ -12,7 +12,6 @@ export const staBarbaraHiWayMarkers = [
     {value: 'Jolibee Diversion Taft',  latitude:  10.719780, longitude: 122.551934},
     {value: 'SM City Iloilo',  latitude: 10.714232, longitude: 122.551146},
     {value: 'San Rafael',  latitude: 10.708838, longitude: 122.551744},
-    {value: 'Oton Plaza',  latitude: 10.692254, longitude: 122.478324},
     {value: `Maxx's Stoplight`,  latitude: 10.717873, longitude: 122.537422},
     ]
 
