@@ -23,6 +23,29 @@ class MapScreen extends Component {
     this.setState({index2: i})
   }
 
+  //Haversine formula
+  calculateDistance(marker1, marker2) {
+    let R = 6371.0710 // Radius of the Earth in km
+    let rlat1 = marker1.latitude * (Math.PI/180) // Convert degrees to radians
+    let rlat2 = marker2.latitude * (Math.PI/180) // Convert degrees to radians
+    let difflat = rlat2 - rlat1 // Radian difference (latitudes)
+    let difflon = (marker2.longitude - marker1.longitude) * (Math.PI/180) // Radian difference (longitudes)
+    
+    let distance = 2 * R * Math.asin(Math.sqrt(Math.sin(difflat / 2) * Math.sin(difflat / 2) +
+    Math.cos(rlat1) * Math.cos(rlat2) * Math.sin(difflon / 2) * Math.sin(difflon / 2)))
+    
+    console.log('Exact distance: ' + distance + 'KM')
+    return Math.ceil(distance)
+  }
+
+  calcluteTotalFare(distance) {
+    for (let i = 0; i < fare.length; i++) {
+      if (distance === fare[i][0]) {
+        return fare[i][1] + 'PHP regular ' + fare[i][2] + 'PHP discounted'
+      }
+    }
+  }
+
   render () {
      const markers = this.state.data
         return (
@@ -44,8 +67,8 @@ class MapScreen extends Component {
             onChangeText={this.getIndex2}
             />
 
-            <Text>Total Distance: {calculateDistance(markers[this.state.index1], markers[this.state.index2])} KM</Text>
-            <Text>Total Fare: {calcluteTotalFare(calculateDistance(markers[this.state.index1], markers[this.state.index2]))}</Text>
+            <Text>Total Distance: {this.calculateDistance(markers[this.state.index1], markers[this.state.index2])} KM</Text>
+            <Text>Total Fare: {this.calcluteTotalFare(this.calculateDistance(markers[this.state.index1], markers[this.state.index2]))}</Text>
       
             </Card.Content>
           </Card>
@@ -57,29 +80,6 @@ class MapScreen extends Component {
           </View>
         )
     }
-}
-
-//Haversine formula
-function calculateDistance(marker1, marker2) {
-  let R = 6371.0710 // Radius of the Earth in km
-  let rlat1 = marker1.latitude * (Math.PI/180) // Convert degrees to radians
-  let rlat2 = marker2.latitude * (Math.PI/180) // Convert degrees to radians
-  let difflat = rlat2 - rlat1 // Radian difference (latitudes)
-  let difflon = (marker2.longitude - marker1.longitude) * (Math.PI/180) // Radian difference (longitudes)
-  
-  let distance = 2 * R * Math.asin(Math.sqrt(Math.sin(difflat / 2) * Math.sin(difflat / 2) +
-  Math.cos(rlat1) * Math.cos(rlat2) * Math.sin(difflon / 2) * Math.sin(difflon / 2)))
-  
-  console.log('Exact distance: ' + distance + 'KM')
-  return Math.ceil(distance)
-}
-
-function calcluteTotalFare(distance) {
-  for (let i = 0; i < fare.length; i++) {
-    if (distance === fare[i][0]) {
-      return fare[i][1] + 'PHP regular ' + fare[i][2] + 'PHP discounted'
-    }
-  }
 }
 
 export default MapScreen
