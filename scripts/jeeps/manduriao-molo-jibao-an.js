@@ -7,7 +7,7 @@ import styles from '../screens/styles'
 export const manduriaoMoloMarkers = 
     [
     {value: 'Ana Ros Village',  latitude: 10.725809, longitude: 122.528350},
-    {value: 'Manduriao Plaza',  latitude: 10.717873, longitude: 122.537422},
+    {value: 'Mandurriao Plaza',  latitude: 10.717873, longitude: 122.537422},
     {value: 'Esplanade Uno',  latitude: 10.700778, longitude: 122.542669},
     {value: 'Iloilo Supermart - Molo',  latitude: 10.718063, longitude: 122.541748},
     {value: 'Molo Plaza',  latitude: 10.696873, longitude: 122.544026},

@@ -7,7 +7,7 @@ import styles from '../screens/styles'
 export const JaroPlazaManduriaoMarkers = [
     {value: 'Carlos Bakeshop',  latitude: 10.725028, longitude: 122.549731},
     {value: 'Jolibee Festive',  latitude: 10.718549, longitude: 122.546994},
-    {value: 'Iloilo Supermart - Manduriao',  latitude: 10.718177, longitude: 122.542674},
+    {value: 'Iloilo Supermart-Manduriao',  latitude: 10.718177, longitude: 122.542674},
     {value: 'West Visayas Medical Center',  latitude: 10.718063, longitude: 122.541748},
     {value: 'Manduriao Plaza',  latitude: 10.717873, longitude: 122.537422},
     {value: 'Ana Ros Village',  latitude: 10.725809, longitude: 122.528350},

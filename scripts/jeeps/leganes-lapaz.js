@@ -7,14 +7,14 @@ import styles from '../screens/styles'
 export const leganesLapazMarkers = 
 [
   {value: 'Leganes Commercial Complex', latitude: 10.786766, longitude: 122.589266},
-  {value: 'CitiHardware Iloilo - Jaro', latitude: 10.772256, longitude: 122.583538},
+  {value: 'CitiHardware Iloilo-Jaro', latitude: 10.772256, longitude: 122.583538},
   {value: 'CityMall Tagbak', latitude: 10.763576, longitude: 122.578559},
   {value: 'Ceres Northbound Terminal Iloilo City', latitude: 10.755068, longitude: 122.572003},
   {value: 'Toyota Iloilo, Inc.', latitude: 10.744049, longitude: 122.565313},
   {value: 'Bankers Village IV', latitude: 10.736712, longitude: 122.561254},
   {value: 'Jollibee Tabuc Suba', latitude: 10.730864, longitude: 122.559506},
-  {value: 'J&T Express - Office', latitude: 10.728221, longitude: 122.556402},
-  {value: 'BDO Iloilo - Jaro Branch', latitude: 10.726243, longitude: 122.556528},
+  {value: 'J&T Express-Office', latitude: 10.728221, longitude: 122.556402},
+  {value: 'BDO Iloilo-Jaro Branch', latitude: 10.726243, longitude: 122.556528},
   {value: 'Jaro Plaza', latitude: 10.724483, longitude: 122.557360},
   {value: 'SM Hypermarket Ilolilo', latitude: 10.720479, longitude: 122.561148},
   {value: 'Iloilo Science and Technology University', latitude: 10.715720, longitude: 122.566393},

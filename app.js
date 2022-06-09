@@ -8,6 +8,7 @@ import HomeScreen from './scripts/screens/HomeScreen';
 import FareScreen from './scripts/screens/FareScreen';
 import JeepScreen from './scripts/screens/JeepScreen';
 import MapScreen from './scripts/screens/MapScreen';
+import JeepLocation from './scripts/screens/JeepLocation'
 
 const Stack = createNativeStackNavigator()
 const theme = {
@@ -33,6 +34,7 @@ export default function App() {
           <Stack.Screen name="Fare List" component={FareScreen}/>
           <Stack.Screen name="Jeep List" component={JeepScreen}/>
           <Stack.Screen name="Maps" component={MapScreen}/>
+          <Stack.Screen name="Jeep Location" component={JeepLocation}/>
         </Stack.Navigator>
     </NavigationContainer>
     </PaperProvider>

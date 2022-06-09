@@ -17,7 +17,7 @@ export const mandurriaoSMMarkers =
    {value: 'University of San Agustin', latitude: 10.698694, longitude: 122.561837},
    {value: 'Colegio de las Hijas de Jesus', latitude: 10.694740, longitude: 122.561821},
    {value: 'Robinsons Ilolo', latitude: 10.695194, longitude: 122.565343},
-   {value: 'Marymart', latitude: 10.696933, longitude: 122.567733},
+   {value: 'Mary Mart', latitude: 10.696933, longitude: 122.567733},
    {value: 'SM Delgado', latitude: 10.697903, longitude: 122.567249}
    ]
 
