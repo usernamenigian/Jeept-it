@@ -10,7 +10,7 @@ export const staBarbaraHiWayMarkers =
     {value: 'GT Town Center Pavia',  latitude: 10.753946, longitude: 122.537994},
     {value: `Ungka Terminal`,  latitude: 10.746239, longitude: 10.746239},
     {value: 'Carlos Bakeshop',  latitude: 10.725028, longitude: 122.549731},
-    {value: 'Jolibee Diversion Taft',  latitude:  10.719780, longitude: 122.551934},
+    {value: 'Jollibee Diversion Taft',  latitude:  10.719780, longitude: 122.551934},
     {value: 'SM City Iloilo',  latitude: 10.714232, longitude: 122.551146},
     {value: 'San Rafael',  latitude: 10.708838, longitude: 122.551744},
     {value: `Maxx's Stoplight`,  latitude: 10.717873, longitude: 122.537422},

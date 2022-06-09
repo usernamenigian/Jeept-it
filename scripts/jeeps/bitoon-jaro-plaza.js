@@ -16,7 +16,7 @@ export const bitoonJaroPlazaMarkers =
   {value: 'Bamboo Craft', latitude: 10.711950, longitude: 122.571799},
   {value: 'Lapaz-1 Elementary School', latitude: 10.710980, longitude: 122.572060},
   {value: 'Iloilo City Police Office', latitude: 10.710553, longitude: 122.570836},
-  {value: '7-eleven', latitude: 10.710263, longitude: 122.570363},
+  {value: '7-Eleven', latitude: 10.710263, longitude: 122.570363},
   {value: 'Jaro Plaza', latitude: 10.711691, longitude: 122.570687}
 ]
 
