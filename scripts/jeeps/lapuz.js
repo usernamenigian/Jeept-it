@@ -15,7 +15,7 @@ export const lapuzMarkers =
   {value: 'Shopwise', latitude: 10.698145, longitude: 122.568733},
   {value: 'Chowking', latitude: 10.697201, longitude: 122.569268},
   {value: 'Citi Appliance', latitude: 10.695142, longitude: 122.571019},
-  {value: 'Jollibee', latitude: 10.693298, longitude: 122.57174},
+  {value: 'Jollibee Lapuz', latitude: 10.693298, longitude: 122.57174},
   {value: '7-Eleven', latitude: 10.692948, longitude: 122.572281},
   {value: 'Plaza Libertad', latitude: 10.692632, longitude: 122.573688},
   {value: 'National Bureau of Investigation', latitude: 10.688953, longitude: 122.578608},
