@@ -21,8 +21,7 @@ export const lapuzMarkers =
   {value: 'National Bureau of Investigation', latitude: 10.688953, longitude: 122.578608},
   {value: 'Iloilo City Porta', latitude: 10.690623, longitude: 122.582806},
   {value: 'Guimaras-Iloilo Ferry Terminal', latitude: 10.692458, longitude: 122.583144},
-  {value: 'Iloilo City Fire Station', latitude: 10.694048, longitude: 122.572684},
-  {value: 'Iloilo City Fire Station', latitude: 10.700403, longitude: 122.570084}
+  {value: 'Iloilo City Fire Station', latitude: 10.694048, longitude: 122.572684}
 ]
 
 export const lapuz = 
