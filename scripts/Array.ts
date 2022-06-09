@@ -1,7 +1,7 @@
 class myArray<T> extends Array<T> {
     
     public push(item: T): any {
-        if (!this.includes(item)) {
+        if (this.indexOf(item) === -1) {
             return super.push(item)
         }
     }
