@@ -1,5 +1,3 @@
-import myArray from './Array'
-
 class Fare {
     constructor (distance, regular, discounted) 
     {
