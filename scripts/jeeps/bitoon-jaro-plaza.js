@@ -7,17 +7,10 @@ import styles from '../screens/styles'
 export const bitoonJaroPlazaMarkers = 
 [
   {value: 'Bito-on', latitude: 10.750625, longitude: 122.589123},
-  {value: 'Bito-on Elementary School', latitude: 10.750059, longitude: 122.589762},
-  {value: 'Balabago', latitude: 10.740376, longitude: 122.582298},
-  {value: 'TDT Powersteel Corporation', latitude: 10.725971, longitude: 122.579039},
-  {value: 'Ticud', latitude: 10.718764, longitude: 122.579594},
-  {value: 'Dumangas Terminal', latitude: 10.717816, longitude: 122.579454},
-  {value: 'Ticud Elementary School', latitude: 10.717095, longitude: 122.578052},
-  {value: 'Bamboo Craft', latitude: 10.711950, longitude: 122.571799},
-  {value: 'Lapaz-1 Elementary School', latitude: 10.710980, longitude: 122.572060},
-  {value: 'Iloilo City Police Office', latitude: 10.710553, longitude: 122.570836},
-  {value: '7-eleven', latitude: 10.710263, longitude: 122.570363},
-  {value: 'Jaro Plaza', latitude: 10.711691, longitude: 122.570687}
+  {value: 'Bito-on Elementary School', latitude: 10.739250, longitude: 122.580121},
+  {value: 'Balabago', latitude: 10.737813, longitude: 122.576125},
+  {value: 'UCPB', latitude: 10.724689, longitude: 122.556049},
+  {value: 'Jaro Plaza', latitude: 10.724362, longitude: 122.557294}
 ]
 
 export const bitoonJaroPlaza =
@@ -31,18 +24,14 @@ initialRegion = {{
    }}>
 
 <MapViewDirections
-    origin = {{latitude: 10.751351, longitude: 122.589251}}
-    waypoints = {[{latitude: 10.747546, longitude: 122.587892},
-                  {latitude: 10.74483, longitude: 122.585992},
-                  {latitude: 10.740508, longitude: 122.582824},
-                  {latitude: 10.738541, longitude: 122.577522},
-                  {latitude: 10.729429, longitude: 122.560425},
-                  {latitude: 10.730158, longitude: 122.559123},
-                  {latitude: 10.725845, longitude: 122.557732},
-                  {latitude: 10.725544, longitude: 122.557081},
-                  {latitude: 10.72462, longitude: 122.556396}
+    origin = {{latitude: 10.747657, longitude: 122.588003}}
+    waypoints = {[{latitude: 10.740523, longitude: 122.582781},
+                  {latitude: 10.729385, longitude: 122.560409},
+                  {latitude: 10.730144, longitude: 122.559078},
+                  {latitude: 10.725459, longitude: 122.557136},
+                  {latitude: 10.724300, longitude: 122.556406}
                 ]}
-    destination = {{latitude:10.724026, longitude: 122.556851}}
+    destination = {{latitude:10.723098, longitude: 122.557695}}
     apikey = {'AIzaSyDz4sKzFahw8gq6f045fSJ6_xTiIhX2x78'}
     strokeWidth = {4}
     strokeColor = "red"
