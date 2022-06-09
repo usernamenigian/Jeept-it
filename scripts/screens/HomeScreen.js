@@ -20,6 +20,13 @@ class HomeScreen extends Component {
           <Button mode="contained" onPress={() => this.props.navigation.navigate('Jeep List')}>View</Button>
         </Card.Content>
       </Card>
+
+      <Card style={styles.card}>
+        <Card.Title title="Jeepney Location" />
+        <Card.Content>
+          <Button mode="contained" onPress={() => this.props.navigation.navigate('Jeep Location')}>View</Button>
+        </Card.Content>
+      </Card>
       
      </View>
     )

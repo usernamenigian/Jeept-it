@@ -11,7 +11,7 @@ export const jaroLikoNFAMarkers =
     { value: 'Jollibee', latitude: 10.7190179, longitude: 122.5608054 },
     { value: 'West Visayas State University', latitude: 10.7135681, longitude: 122.5624973 },
     { value: 'Gaisano Capital City', latitude: 10.7068854, longitude: 122.5666009 },
-    { value: 'The Atrium', latitude: 10.7006106, longitude: 122.5682697 },
+    { value: 'Atrium', latitude: 10.7006106, longitude: 122.5682697 },
     { value: 'University of San Agustin', latitude: 10.6994123, longitude: 122.5630039 },
     { value: 'Robinsons Place', latitude: 10.6941958, longitude: 122.565573 },
     { value: 'Iloilo City Central Public Market', latitude: 10.6926913, longitude: 122.5695755 },

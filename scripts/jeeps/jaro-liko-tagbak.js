@@ -12,7 +12,7 @@ export const jaroLikoTagbakMarkers = [
   { value: 'Jollibee', latitude: 10.7190179, longitude: 122.5608054 },
   { value: 'West Visayas State University', latitude: 10.7135681, longitude: 122.5624973 },
   { value: 'Gaisano Capital City', latitude: 10.7068854, longitude: 122.5666009 },
-  { value: 'The Atrium', latitude: 10.7006106, longitude: 122.5682697 },
+  { value: 'Atrium', latitude: 10.7006106, longitude: 122.5682697 },
   { value: 'University of San Agustin', latitude: 10.6994123, longitude: 122.5630039 },
   { value: 'SM Delgado', latitude: 10.6986532, longitude: 122.5671546 },
   { value: 'Rizal Lapaz Barangay Hall', latitude: 10.706645519257266, longitude: 122.56926365208066 },
