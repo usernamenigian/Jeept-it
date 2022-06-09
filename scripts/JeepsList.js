@@ -72,6 +72,4 @@ jeeps.push(UngkaTanza)
 const Villa = new Jeep('Villa', villa, villaMarkers)
 jeeps.push(Villa)
 
-
-
 export default jeeps
