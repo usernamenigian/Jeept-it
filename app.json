@@ -21,7 +21,12 @@
         "backgroundColor": "#FFFFFF"
       },
       "package": "com.patchespatch04.jeepit",
-      "versionCode": 1
+      "versionCode": 1,
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDz4sKzFahw8gq6f045fSJ6_xTiIhX2x78"
+        }
+      }
     }
   }
 }
