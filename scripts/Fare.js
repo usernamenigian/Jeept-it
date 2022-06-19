@@ -9,13 +9,13 @@ class Fare {
 
 const fareArray = []
 const KM = []
-const distance = 50
+const distance = 25
 for (let i = 1, j = 1.5, k = 1.25; i <= distance; i++) {
     if (i <= 4) {
-      KM[i] = new Fare (i, 9, 6.25)
+      KM[i] = new Fare (i, 10, 8)
       fareArray.push(KM[i])
     } else if (i >= 5) {
-      KM[i] = new Fare (i, 9 + j, 6.25 + k)
+      KM[i] = new Fare (i, 10 + j, 8 + k)
       fareArray.push(KM[i])
       j += 1.5
       k += 1.25
