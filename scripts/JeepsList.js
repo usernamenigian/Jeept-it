@@ -2,7 +2,7 @@ import {barrioObrero, barrioObreroMarkers} from "./jeeps/barrio-obrero"
 import {bitoonJaroPlaza, bitoonJaroPlazaMarkers} from "./jeeps/bitoon-jaro-plaza"
 import {calaparanCalumpang, calaparanCalumpangMarkers} from "./jeeps/02-calaparan-calumpang-iloilo-city-proper"
 import {jaroCPU, jaroCPUMarkers} from "./jeeps/jaro-cpu"
-import {jaroCPUUngka, jaroCPUUngkaMarkers} from "./jeeps/jaro-cpu-ungka"
+import {ungkaCPU, ungkaCPUMarkers} from "./jeeps/03-ungka-iloilo-city-proper-via-cpu"
 import {jaroLikoNFA, jaroLikoNFAMarkers} from "./jeeps/jaro-liko-nfa"
 import {jaroLikoTagbak, jaroLikoTagbakMarkers} from "./jeeps/jaro-liko-tagbak"
 import {lapaz, lapazMarkers} from "./jeeps/lapaz"
@@ -37,8 +37,8 @@ const CalaparanCalumpang = new Jeep('Calaparan Calumpang', calaparanCalumpang, c
 jeeps.push(CalaparanCalumpang)
 const JaroCPU = new Jeep('Jaro CPU', jaroCPU, jaroCPUMarkers)
 jeeps.push(JaroCPU)
-const JaroCPUUngka = new Jeep('Jaro CPU Ungka', jaroCPUUngka, jaroCPUUngkaMarkers)
-jeeps.push(JaroCPUUngka)
+const UngkaCPU = new Jeep('Ungka via CPU', ungkaCPU, ungkaCPUMarkers)
+jeeps.push(UngkaCPU)
 const JaroLikoNFA = new Jeep('Jaro Liko NFA', jaroLikoNFA, jaroLikoNFAMarkers)
 jeeps.push(JaroLikoNFA)
 const JaroLikoTagbak = new Jeep('Jaro Liko Tagbak', jaroLikoTagbak, jaroLikoTagbakMarkers)

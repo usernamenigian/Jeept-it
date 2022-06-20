@@ -5,43 +5,38 @@ import MapViewDirections from 'react-native-maps-directions';
 
 import styles from '../screens/styles'
 
-export const jaroCPUUngkaMarkers =
+export const ungkaCPUMarkers =
   [
+    { value: 'ITGSI Ungka Terminal', latitude: 10.745878, longitude: 122.539180},
     { value: 'Christ The King Memorial Park', latitude: 10.7457002, longitude: 122.5408506 },
     { value: 'Central Philippine University', latitude: 10.7310066, longitude: 122.5491166 },
     { value: 'Jaro Plaza', latitude: 10.7244118, longitude: 122.5573263 },
-    { value: 'Jollibee', latitude: 10.7190179, longitude: 122.5608054 },
     { value: 'West Visayas State University', latitude: 10.7135681, longitude: 122.5624973 },
     { value: 'Gaisano Capital City', latitude: 10.7068854, longitude: 122.5666009 },
-    { value: 'Arroyo Fountain', latitude: 10.7015547, longitude: 122.5690689 },
-    { value: 'Jollibee', latitude: 10.6967916, longitude: 122.5689268 },
+    { value: 'Casa Real', latitude: 10.701699, longitude: 122.569073 },
     { value: 'Museum of Philippine Economic History', latitude: 10.693033218383789, longitude: 122.572509765625 },
     { value: 'Plaza Libertad', latitude: 10.6926236, longitude: 122.573675 },
     { value: 'City Mall Parola', latitude: 10.691514696588158, longitude: 122.58258372479348 }
   ]
 
-export const jaroCPUUngka =
+export const ungkaCPU =
   <View style={styles.container}>
     <MapView
       style={styles.map}
       initialRegion={{
-        latitude: 10.69746,
-        longitude: 122.562401,
+        latitude: 10.708666,
+        longitude: 122.562307,
         latitudeDelta: 0.1,
         longitudeDelta: 0.045,
       }}>
 
       <MapViewDirections
-        origin={{ latitude: 10.7457002, longitude: 122.5408506 }}
+        origin={{ latitude: 10.746165, longitude: 122.539340}}
         waypoints={[
-          { latitude: 10.691613003096371, longitude: 122.57402551918958 },
-          { latitude: 10.735895664364957, longitude: 122.54611724419127 },
-          { latitude: 10.6967916, longitude: 122.5689268 },
+          { latitude: 10.724654, longitude: 122.556407 },
+          { latitude: 10.694006, longitude: 122.570953 }
         ]}
-        destination={{
-          latitude: 10.691514696588158,
-          longitude: 122.58258372479348,
-        }}
+        destination={{latitude: 10.691491, longitude: 122.582518,}}
         apikey={'AIzaSyDz4sKzFahw8gq6f045fSJ6_xTiIhX2x78'}
         strokeWidth={4}
         strokeColor="red"
@@ -49,36 +44,27 @@ export const jaroCPUUngka =
       />
 
       <MapViewDirections
-        origin={{
-          latitude: 10.691514696588158,
-          longitude: 122.58258372479348,
-        }}
+        origin={{latitude: 10.691491, longitude: 122.582518}}
         waypoints={[
-          { latitude: 10.693619677178722, longitude: 122.579265963030689 },
-          { latitude: 10.693583433470499, longitude: 122.57165353956078 },
-          { latitude: 10.705819981510704, longitude: 122.56767161686376 },
-          { latitude: 10.720673590415752, longitude: 122.5594646452043 },
-          { latitude: 10.723888430702711, longitude: 122.55840779610143 },
-          { latitude: 10.732825085909308, longitude: 122.54964904264388 }
+          { latitude: 10.692255, longitude: 122.574311 },
+          { latitude: 10.701188, longitude: 122.569082 },
+          { latitude: 10.727999, longitude: 122.557175 },
         ]}
-        destination={{
-          latitude: 10.7457002,
-          longitude: 122.5408506
-        }}
+        destination={{latitude: 10.746246, longitude: 122.539338}}
         apikey={'AIzaSyDz4sKzFahw8gq6f045fSJ6_xTiIhX2x78'}
         strokeWidth={4}
         strokeColor="red"
         optimizeWaypoints={true}
       />
 
-      {jaroCPUUngkaMarkers.map((marker, index) => {
+      {ungkaCPUMarkers.map((marker, index) => {
         return (<MapView.Marker
           coordinate={{
-            latitude: jaroCPUUngkaMarkers[index].latitude,
-            longitude: jaroCPUUngkaMarkers[index].longitude
+            latitude: ungkaCPUMarkers[index].latitude,
+            longitude: ungkaCPUMarkers[index].longitude
           }}
           pinColor={"red"}
-          title={jaroCPUUngkaMarkers[index].value}
+          title={ungkaCPUMarkers[index].value}
         />
         )
       })
