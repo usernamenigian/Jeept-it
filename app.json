@@ -1,8 +1,13 @@
 {
   "expo": {
     "name": "Jeep It",
+    "description": "Jeep routes map in Iloilo City",
     "slug": "jeep-it",
-    "version": "1.0.0",
+    "owner": "patchespatch04",
+    "originalFullName": "@patchespatch04/jeep-it",
+    "sdkversion": "45.0.5",
+    "version": ["android"],
+    "platforms": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
