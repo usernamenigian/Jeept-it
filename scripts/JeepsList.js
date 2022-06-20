@@ -1,4 +1,4 @@
-import {barrioObrero, barrioObreroMarkers} from "./jeeps/barrio-obrero"
+import {barrioObrero, barrioObreroMarkers} from "./jeeps/01-bo-obrero-iloilo-city-proper-loop"
 import {bitoonJaroPlaza, bitoonJaroPlazaMarkers} from "./jeeps/bitoon-jaro-plaza"
 import {calaparanVilla, calaparanVillaMarkers} from "./jeeps/calaparan-villa-beach"
 import {jaroCPU, jaroCPUMarkers} from "./jeeps/jaro-cpu"
