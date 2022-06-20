@@ -31,7 +31,7 @@ export default function App() {
         <Stack.Navigator>
           <Stack.Screen name="Welcome" component={WelcomeScreen}/>
           <Stack.Screen name="Home" component={HomeScreen}/>
-          <Stack.Screen name="Fare List" component={FareScreen}/>
+          <Stack.Screen name="Fare Guide" component={FareScreen}/>
           <Stack.Screen name="Jeep List" component={JeepScreen}/>
           <Stack.Screen name="Maps" component={MapScreen}/>
           <Stack.Screen name="Jeep Location" component={JeepLocation}/>

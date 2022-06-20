@@ -10,7 +10,7 @@ class HomeScreen extends Component {
       <Card style={styles.card}>
         <Card.Title title="Jeepney Fare Guide" />
         <Card.Content>
-         <Button mode="contained" onPress={() => this.props.navigation.navigate('Fare List')}>View</Button>
+         <Button mode="contained" onPress={() => this.props.navigation.navigate('Fare Guide')}>View</Button>
         </Card.Content>
       </Card>
 

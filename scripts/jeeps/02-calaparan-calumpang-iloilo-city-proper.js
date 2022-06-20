@@ -4,20 +4,21 @@ import { View } from 'react-native';
 import MapViewDirections from 'react-native-maps-directions';
 
 import styles from '../screens/styles'
-
-export const calaparanVillaMarkers = 
-[{value: 'Plaza Libertad', latitude: 10.692331, longitude: 122.573544}, 
- {value: 'PHINMA University Iloilo', latitude: 10.691782, longitude: 122.569529},
- {value: 'UNITOP', latitude: 10.696526, longitude: 122.568670},
- {value: '1688 MALL', latitude: 10.695514, longitude: 122.566815},
- {value: 'Robinsons Iloilo', latitude: 10.694987, longitude: 122.565204},
- {value: 'Colegio de las Hijas de Jesus', latitude: 10.694797, longitude: 122.562891},
- {value: 'Tanza Church', latitude: 10.693174, longitude: 122.559348},
+export const calaparanCalumpangMarkers = 
+[
+ {value: 'Breakthrough', latitude: 10.679911, longitude: 122.517421},
+ {value: 'Juntado Subdivision', latitude: 10.685771224544277, longitude: 122.5418878671273},
  {value: 'Robinsons Builders', latitude: 10.692837, longitude: 122.555848},
- {value: 'Breakthrough', latitude: 10.679911, longitude: 122.517421}
+ {value: 'Tanza Church', latitude: 10.693174, longitude: 122.559348},
+ {value: 'Colegio de las Hijas de Jesus', latitude: 10.694797, longitude: 122.562891},
+ {value: 'Robinsons Iloilo', latitude: 10.694987, longitude: 122.565204},
+ {value: '1688 MALL', latitude: 10.695514, longitude: 122.566815},
+ {value: 'UNITOP', latitude: 10.696526, longitude: 122.568670},
+ {value: 'PHINMA University Iloilo', latitude: 10.691782, longitude: 122.569529},
+ {value: 'Plaza Libertad', latitude: 10.692331, longitude: 122.573544}
 ]
 
-export const calaparanVilla =
+export const calaparanCalumpang =
   <View style = {styles.container}>
    <MapView style = {styles.map} 
     initialRegion = {{
@@ -56,12 +57,12 @@ export const calaparanVilla =
     optimizeWaypoints={true}
    />
 
-   {calaparanVillaMarkers.map((marker, index) => {
+   {calaparanCalumpangMarkers.map((marker, index) => {
     return (<MapView.Marker
-     coordinate = {{latitude: calaparanVillaMarkers[index].latitude,
-     longitude: calaparanVillaMarkers[index].longitude}}
+     coordinate = {{latitude: calaparanCalumpangMarkers[index].latitude,
+     longitude: calaparanCalumpangMarkers[index].longitude}}
      pinColor = {"red"}
-     title = {calaparanVillaMarkers[index].value}
+     title = {calaparanCalumpangMarkers[index].value}
     /> 
     )})
    }

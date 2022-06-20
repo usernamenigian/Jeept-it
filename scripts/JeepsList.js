@@ -1,6 +1,6 @@
 import {barrioObrero, barrioObreroMarkers} from "./jeeps/barrio-obrero"
 import {bitoonJaroPlaza, bitoonJaroPlazaMarkers} from "./jeeps/bitoon-jaro-plaza"
-import {calaparanVilla, calaparanVillaMarkers} from "./jeeps/calaparan-villa-beach"
+import {calaparanCalumpang, calaparanCalumpangMarkers} from "./jeeps/02-calaparan-calumpang-iloilo-city-proper"
 import {jaroCPU, jaroCPUMarkers} from "./jeeps/jaro-cpu"
 import {jaroCPUUngka, jaroCPUUngkaMarkers} from "./jeeps/jaro-cpu-ungka"
 import {jaroLikoNFA, jaroLikoNFAMarkers} from "./jeeps/jaro-liko-nfa"
@@ -33,8 +33,8 @@ const BarrioObrero = new Jeep('Barrio Obrero', barrioObrero, barrioObreroMarkers
 jeeps.push(BarrioObrero)
 const BitoonJaroPlaza = new Jeep('Bitoon Jaro Plaza', bitoonJaroPlaza, bitoonJaroPlazaMarkers)
 jeeps.push(BitoonJaroPlaza)
-const CalaparanVilla = new Jeep('Calaparan Villa', calaparanVilla, calaparanVillaMarkers)
-jeeps.push(CalaparanVilla)
+const CalaparanCalumpang = new Jeep('Calaparan Calumpang', calaparanCalumpang, calaparanCalumpangMarkers)
+jeeps.push(CalaparanCalumpang)
 const JaroCPU = new Jeep('Jaro CPU', jaroCPU, jaroCPUMarkers)
 jeeps.push(JaroCPU)
 const JaroCPUUngka = new Jeep('Jaro CPU Ungka', jaroCPUUngka, jaroCPUUngkaMarkers)
