@@ -46,7 +46,7 @@ export const barrioObrero =
                   {latitude: 10.698304, longitude: 122.582237},
                   {latitude: 10.699597, longitude: 122.581535},
                   {latitude: 10.702267, longitude: 122.571473},
-                  {latitude: 10.70163921339008, longitude: 122.56916998318508},
+                  {latitude: 10.701639, longitude: 122.569169},
                   {latitude: 10.696603, longitude: 122.569113},
                   {latitude: 10.693932, longitude: 122.571005},
                   {latitude: 10.692901, longitude: 122.572638},
@@ -56,6 +56,26 @@ export const barrioObrero =
                   {latitude: 10.692155, longitude: 122.569130},
                   {latitude: 10.693112, longitude: 122.569093}]}
     destination = {{latitude:10.693747, longitude: 122.569092}}
+    apikey = {'AIzaSyDz4sKzFahw8gq6f045fSJ6_xTiIhX2x78'}
+    strokeWidth = {4}
+    strokeColor = "green"
+    optimizeWaypoints={true}
+   />
+
+<MapViewDirections
+    origin = {{latitude:10.693747, longitude: 122.569092}}
+    waypoints = {[{latitude: 10.696400, longitude: 122.569060},
+                  {latitude: 10.696457, longitude: 122.569238},
+                  {latitude: 10.696645, longitude: 122.569158},
+                  {latitude: 10.701291, longitude: 122.569106},
+                  {latitude: 10.702259, longitude: 122.571470},
+                  {latitude: 10.699600, longitude: 122.581536},
+                  {latitude: 10.698222, longitude: 122.582950},
+                  {latitude: 10.697271, longitude: 122.583460},
+                  {latitude: 10.697961, longitude: 122.584800},
+                  {latitude: 10.697210, longitude: 122.585749},
+                  {latitude: 10.699585, longitude: 122.587712}]}
+    destination = {{latitude: 10.699883, longitude: 122.587400}}
     apikey = {'AIzaSyDz4sKzFahw8gq6f045fSJ6_xTiIhX2x78'}
     strokeWidth = {4}
     strokeColor = "red"
