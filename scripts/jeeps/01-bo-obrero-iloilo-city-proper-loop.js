@@ -46,7 +46,7 @@ export const barrioObrero =
                   {latitude: 10.698304, longitude: 122.582237},
                   {latitude: 10.699597, longitude: 122.581535},
                   {latitude: 10.702267, longitude: 122.571473},
-                  {latitude: 10.701642, longitude: 122.569089},
+                  {latitude: 10.70163921339008, longitude: 122.56916998318508},
                   {latitude: 10.696603, longitude: 122.569113},
                   {latitude: 10.693932, longitude: 122.571005},
                   {latitude: 10.692901, longitude: 122.572638},
